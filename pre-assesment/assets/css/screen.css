@@ -22,7 +22,7 @@ body {
 	border: 1px solid #CCC;
 }
 
-header.primary h1  {
+ h1 a  {
 	.hide-text {
 		text-indent: 100%;
 		white-space: nowrap;
