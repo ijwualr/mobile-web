@@ -38,7 +38,7 @@ background-color: aquamarine;
 h4 {
 background-color:coral
 }
-.img1 {
+#content .img1 {
 	float:right;
     border:2px solid #000057;
     max-width:50%;
@@ -81,7 +81,7 @@ background-color:coral
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
-#footer {
+#footer h6 {
 	background-color: #fcf7f7;
 	color: #FFF;
 	height: 25px;
