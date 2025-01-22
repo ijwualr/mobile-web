@@ -74,4 +74,12 @@ body {
         background-color: transparent;
         text-decoration: underline;
     }
+	@media screen and (max-width:600px){
+		header.primary ul {
+		 flex-direction: column;
+		 gap:20px;
+		 max-width:200px;
+		 margin:auto;
+		}
+	}
 }
