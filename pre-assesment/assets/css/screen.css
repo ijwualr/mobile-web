@@ -20,7 +20,7 @@ body {
 	margin-top: 20px;
 	border: 1px solid #CCC;
 }
-#header h1 a {
+h1 a {
 	.hide-text {
 		text-indent: 100%;
 		white-space: nowrap;
@@ -91,4 +91,5 @@ background-color:coral
      max-width:200px;
      margin:auto;
     }
+	
 }
