@@ -20,14 +20,21 @@ body {
 	margin-top: 20px;
 	border: 1px solid #CCC;
 }
-#header {
-}
 #header h1 a {
 	.hide-text {
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
 		}
+}
+h2 {
+background-color: beige;
+}
+h3 {
+background-color: aquamarine;
+}
+h4 {
+background-color:coral
 }
 #nav {
 	background-color: #000;
