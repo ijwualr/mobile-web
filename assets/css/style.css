@@ -1,94 +1,79 @@
-header{
-    background-image: background-color: #e5e5f7;
-    opacity: 1;
-    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444cf755, #444cf7 );
-    background-repeat: repeat-x;
-    line-height: 3rem;
-    }
-    
-    body{
-        font-family: "Open Sans", sans-serif;
-        margin:0;
-        background-color: rgb(108, 149, 238);
-      }
-    
-      .img-right{
-        float:right;
-        margin: 10px 0 10px 20px;
-        border:2px solid rgb(8, 8, 82);;
-        padding:5px;
-        border-radius:50px;
-        max-width:7%;
-        margin-right: 20px;
-      }
-       
-      header.primary{
-        color:rgb(8, 8, 82);
-      text-decoration: none;
-        text-shadow: 1px 1px #000000;
-        padding:20px;
-    }  
-    nav.primary ul {
-      display:flex;
-      flex-direction:column;
-      justify-content:space-around;
-      border: 5px double #1c1e5a;
-      background-color:rgb(157, 203, 234);
-      gap: 3rem;
-      margin-left:20px;
-      margin-right:20px;
-    }
-    
-    nav.primary ul  :hover{
-      box-shadow:10px 10px 5px 0px rgba(22, 32, 77, 0.75);
-      transition: .5s;
-    }
+header {
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: 
+    repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), 
+    repeating-linear-gradient(#444cf755, #444cf7); 
+  /* Combined background properties */
+  background-repeat: repeat-x; /* Consider changing this if needed */
+  line-height: 3rem;
+  padding: 20px; /* Added padding to the header */
+  color: rgb(8, 8, 82);
+  text-decoration: none;
+  text-shadow: 1px 1px #000000;
+}
 
-    nav.primary li  :hover{
-      box-shadow:none;
-    }
-    
-    nav.primary ul {
-    border: 5px double #1c1e5a;
-    list-style-position:outside; 
-    list-style-type:circle;
-    margin-left:5;
-    margin-right:20px;
-    }
-    
-    li.primary {
-      font-weight:bold;
-      list-style:none;
-    
-    }
-    
-    #content p{
-      margin-left:20px;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: darkblue;
-    }
-    
-    #content h2{
-      color:darkblue;
-        border-bottom:2px solid black;
-        margin-left:25px;
-        border-radius: 10px;
-    }
-    
-    #content{
-      display:flex;
-      flex-direction:column;
-      justify-content:space-around;
-      border: 4px double #1c1e5a;
-      background-color:lightblue;
-      gap: 1rem;
-      margin-left:20px;
-      margin-right:20px;
-    }
-    
-    #content li{
-    list-style-type: square;
-    margin-left: 20px;
-    }
-    
-    
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: rgb(108, 149, 238);
+}.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 2px solid rgb(8, 8, 82);
+  padding: 5px;
+  border-radius: 50px;
+  max-width: 7%; /* Consider using a fixed width */
+  margin-right: 20px;
+}
+
+nav.primary ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 5px double #1c1e5a;
+  background-color: rgb(157, 203, 234);
+  gap: 3rem;
+  margin: 0 20px; /* Combined margin-left and margin-right */
+  list-style-type: circle; /* Moved from the second declaration */
+  margin-left: 5px; /* Added unit */
+}
+
+nav.primary ul li:hover { /* More specific selector for hover effect */
+  box-shadow: 10px 10px 5px 0px rgba(22, 32, 77, 0.75);
+  transition: 0.5s;
+}
+
+li.primary {
+  font-weight: bold;
+  /* list-style: none;  Removed to keep the circle style */ 
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 4px double #1c1e5a;
+  background-color: lightblue;
+  gap: 1rem;
+  margin: 0 20px; /* Combined margin-left and margin-right */
+  padding: 20px; /* Added padding */
+}
+
+#content p {
+  margin-left: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: darkblue;
+}
+
+#content h2 {
+  color: darkblue;
+  border-bottom: 2px solid black;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+
+#content li {
+  list-style-type: square;
+  margin-left: 20px;
+}
