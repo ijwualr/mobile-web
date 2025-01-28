@@ -107,7 +107,7 @@ nav.primary ul li a:hover {
 
 /* Footer Styles */
 
-#colophon{
+footer{
   position: relative;
   position: absolute; bottom: 0;
   background-color: rgb(200, 204, 243);
