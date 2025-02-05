@@ -1,0 +1,120 @@
+/* General Body Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: rgb(108, 149, 238);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure body takes up full viewport height */
+  position: relative;
+}
+
+/* Header Styles */
+header {
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 10px
+    ),
+    repeating-linear-gradient(#444cf755, #444cf7);
+  background-repeat: repeat;
+  line-height: 3rem;
+  padding: 20px;
+  color: rgb(8, 8, 82);
+  text-decoration: none;
+  text-shadow: 1px 1px #000000;
+  margin-bottom: 20px;
+  margin-top: 0; /* Top margin removed */
+}
+
+/* Image Styles */
+.img-right {
+  float: right;
+  margin: 15px 20px 20px 20px;
+  border: 2px solid rgb(8, 8, 82);
+  padding: 0px;
+  border-radius: 50px;
+  max-width: 100px;
+}
+
+/* Primary Navigation Styles */
+nav.primary ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+  background-color: transparent;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav.primary ul li {
+  width: 100%;
+}
+
+nav.primary ul li a {
+  display: block;
+  padding: 15px 20px;
+  background-color: #444cf7;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #1c1e5a;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav.primary ul li a:hover {
+  background-color: #2c34b5;
+  box-shadow: 5px 5px 5px 0px rgba(22, 32, 77, 0.75);
+}
+
+/* Content Styles */
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 4px double #1c1e5a;
+  background-color: lightblue;
+  gap: 1rem;
+  margin: 20px;
+  padding: 20px;
+  flex-grow: 1; /* Allow content to take up available space */
+}
+
+#content p {
+  margin-left: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: darkblue;
+}
+
+#content h2 {
+  color: darkblue;
+  border-bottom: 2px solid black;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+
+#content li {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Footer Styles */
+
+footer{
+  position: relative;
+  position: absolute; bottom: 0;
+  background-color: rgb(200, 204, 243);
+  text-align: center;
+  padding: .5px;
+  color: rgb(14, 13, 13);
+  font-size: 1.5rem;
+  width: 100%;
+}
+
