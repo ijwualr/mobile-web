@@ -42,9 +42,9 @@ header {
 /* Primary Navigation Styles */
 nav.primary ul {
   display: flex;
-  flex-direction: row; /* Buttons in a row */
-  justify-content: flex-start; /* Align buttons to the left */
-  align-items: center;  /* Vertically center items */
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   border: none;
   background-color: transparent;
   gap: 1rem;
@@ -54,7 +54,6 @@ nav.primary ul {
 }
 
 nav.primary ul li {
-  /* Removed width restrictions */
 }
 
 nav.primary ul li a {
@@ -67,7 +66,6 @@ nav.primary ul li a {
   border: 2px solid #1c1e5a;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  /* Removed width restrictions */
 }
 
 nav.primary ul li a:hover {
@@ -109,12 +107,21 @@ nav.primary ul li a:hover {
 
 /* Footer Styles */
 footer {
-  position: absolute;
-  bottom: 0;
+  position: fixed; /* Use fixed positioning */
+  bottom: -200px;    /* Distance from the bottom */
+  right: -125px;     /* Distance from the right */
+  width: 500px;    /* Circle diameter */
+  height: 500px;   /* Circle diameter */
+  border-radius: 50%; /* Make it a circle */
+  border: 2px solid rgb(1, 31, 255);
   background-color: rgb(200, 204, 243);
-  text-align: center;
-  padding: 0.5px;
-  color: rgb(14, 13, 13);
+  text-align: left;
+  color: rgb(0, 0, 0);
   font-size: 1.5rem;
-  width: 100%;
+  display: flex;           /* Use flexbox for centering content */
+  justify-content: left; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  line-height: 1;        /* Reset line-height for vertical centering*/
+    padding: 66px; /*added padding*/
+    box-sizing: border-box;/*added box-sizing*/
 }
