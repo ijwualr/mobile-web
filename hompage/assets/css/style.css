@@ -122,3 +122,30 @@ footer {
     padding: 66px; /*added padding*/
     box-sizing: border-box;/*added box-sizing*/
 }
+
+/*Media Queries*/
+/*Small screens*/
+@media (max-width: 768px) {
+    .img-right {
+        float: none; /* Remove float on smaller screens */
+        margin: 10px auto; /* Center the image horizontally */
+    }
+      nav.primary ul {
+        justify-content: center; /* Center navigation items */
+    }
+}
+
+/*Very small screens*/
+@media (max-width: 480px) {
+     nav.primary ul li a {
+        padding: 8px;  /* Even smaller padding */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+      #content h2 {
+        margin-left: 10px; /* Reduce margin */
+    }
+
+    #content p, #content li {
+        margin-left: 10px; /* Reduce margin */
+    }
+}
