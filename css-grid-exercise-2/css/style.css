@@ -46,7 +46,6 @@ header.primary nav li{
 #content {
   display: grid;
   grid-template-columns: 1.22fr 1fr; 
-  grid-tempate-rows: 1fr 6fr 1fr;
   gap: 20px;
 }
 
@@ -93,4 +92,40 @@ header.primary nav li{
 
 #colophon p {
   margin: 0; 
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  /* Adjust header styles */
+  header.primary {
+    padding: 10px;
+  }
+
+  header.primary h1, header.primary h2 {
+    margin: 5px 0;
+  }
+
+  header.primary nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    gap: 0.5rem; /* Reduce gap between items */
+  }
+
+  header.primary nav li {
+    margin-right: 0; /* Remove horizontal margin */
+  }
+
+  /* Adjust content styles */
+  #content {
+    grid-template-columns: 1fr; /* Use a single column grid for mobile */
+    gap: 10px; /* Reduce gap between columns */
+  }
+
+  #blog {
+    grid-template-columns: 1fr; /* Use a single column grid for mobile */
+  }
+
+  /* Adjust widget styles */
+  .widget {
+    margin-bottom: 10px;
+  }
 }
