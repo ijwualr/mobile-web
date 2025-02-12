@@ -122,7 +122,6 @@ footer {
   box-sizing: border-box;
 }
 
-
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) { 
   nav.primary ul {
