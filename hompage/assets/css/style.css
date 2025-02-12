@@ -29,8 +29,7 @@ header {
   margin-top: 0;
 }
 
-/* Image Styles */
-.img-right {
+/* Image Styles */.img-right {
   float: right;
   margin: 15px 20px 20px 20px;
   border: 2px solid rgb(8, 8, 82);
@@ -104,48 +103,52 @@ nav.primary ul li a:hover {
 
 /* Footer Styles */
 footer {
-  position: fixed; /* Use fixed positioning */
-  bottom: -200px;    /* Distance from the bottom */
-  right: -125px;     /* Distance from the right */
-  width: 500px;    /* Circle diameter */
-  height: 500px;   /* Circle diameter */
-  border-radius: 50%; /* Make it a circle */
+  position: fixed;
+  bottom: -200px;    
+  right: -125px;    
+  width: 500px;    
+  height: 500px;  
+  border-radius: 50%; 
   border: 2px solid rgb(1, 31, 255);
   background-color: rgb(200, 204, 243);
   text-align: left;
   color: rgb(0, 0, 0);
   font-size: 1.5rem;
-  display: flex;           /* Use flexbox for centering content */
-  justify-content: left; /* Center horizontally */
-  align-items: center;    /* Center vertically */
-  line-height: 1;        /* Reset line-height for vertical centering*/
-    padding: 66px; /*added padding*/
-    box-sizing: border-box;/*added box-sizing*/
+  display: flex;             
+  justify-content: left; 
+  align-items: center;      
+  line-height: 1;           
+  padding: 66px; 
+  box-sizing: border-box;
 }
 
-/*Media Queries*/
-/*Small screens*/
-@media (max-width: 768px) {
-    .img-right {
-        float: none; /* Remove float on smaller screens */
-        margin: 10px auto; /* Center the image horizontally */
-    }
-      nav.primary ul {
-        justify-content: center; /* Center navigation items */
-    }
-}
 
-/*Very small screens*/
-@media (max-width: 480px) {
-     nav.primary ul li a {
-        padding: 8px;  /* Even smaller padding */
-        font-size: 0.8rem; /* Smaller font size */
-    }
-      #content h2 {
-        margin-left: 10px; /* Reduce margin */
-    }
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) { 
+  nav.primary ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    gap: 0.5rem; /* Reduce gap between items */
+  }
 
-    #content p, #content li {
-        margin-left: 10px; /* Reduce margin */
-    }
+  nav.primary ul li a {
+    padding: 10px 15px; /* Reduce padding */
+    font-size: 1rem; /* Reduce font size */
+  }
+
+.img-right {
+    max-width: 70px; /* Make image smaller */
+    margin: 10px 10px 10px 10px; /* Adjust margins */
+  }
+
+  footer {
+    position: static; /* Remove fixed positioning */
+    width: auto; 
+    height: auto;
+    border-radius: 0; 
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: normal;
+    bottom: 0; /* Ensure footer stays at the bottom */
+  }
 }

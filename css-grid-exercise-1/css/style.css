@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  margin: 0; /* Remove default body margin */
-  font-family: sans-serif; /* Example font, adjust as needed */
+  margin: 0; 
+  font-family: sans-serif; 
 }
 
 main.cf {
@@ -45,21 +45,20 @@ header.primary nav li{
 
 #content {
   display: grid;
-  grid-template-columns: 2.6fr 1fr; /* Repeat the 2fr 1fr for content inside #content */
+  grid-template-columns: 2.6fr 1fr; 
   padding-left: 50px;
   gap: 20px;
 }
 
 #blog {
-    /*No need to set column. Order determines this.*/
-    padding: 0px; /* Remove if you want a gap around the articles*/
+    padding: 0px; 
 
 }
 
 .post {
   margin-bottom: 20px; /* Space between articles */
   padding: 20px;
-  background: rgba(0, 0, 0, 0.1); /* Light background for each post */
+  background: rgba(0, 0, 0, 0.1); 
 }
 .post header h2{
     margin: 0.5rem 0;
@@ -70,7 +69,7 @@ header.primary nav li{
 }
 
 .post ul {
-    padding-left: 20px; /* Consistent list indent */
+    padding-left: 20px; 
 }
 
 .widget {
@@ -91,5 +90,5 @@ header.primary nav li{
 }
 
 #colophon p {
-  margin: 0; /* Remove default paragraph margin */
+  margin: 0; 
 }
