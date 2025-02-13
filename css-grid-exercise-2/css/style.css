@@ -154,7 +154,7 @@ header.primary nav a:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   main.cf {
     grid-template-columns: 2fr 1fr; 
     grid-template-rows: auto auto;  
