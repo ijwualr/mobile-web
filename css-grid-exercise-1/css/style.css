@@ -23,7 +23,7 @@ main {
 header.primary {
   text-align: center;
   padding: 20px;
-  background-color: #f0f0f0; 
+  background-color: #d6d4d4; 
   width: 100%;         
 }
 
@@ -79,7 +79,7 @@ header.primary nav a:hover {
 }
 
 .post-date {
-  color: #666;
+  color: #d3cfcf;
   font-size: 0.9rem;
   font-style: italic;
   display: block;          
@@ -100,7 +100,7 @@ header.primary nav a:hover {
 .widget {
   margin-bottom: 20px;
   padding: 20px;
-  background-color: #f0f0f0; 
+  background-color: #bdbbbb; 
   border: 1px solid #ccc;    
 }
 
@@ -112,7 +112,7 @@ header.primary nav a:hover {
 /* Footer */
 #colophon {
   width: 100%;           
-  background-color: #f0f0f0; 
+  background-color: #bebcbc; 
   padding: 20px;
   text-align: center;
 }
