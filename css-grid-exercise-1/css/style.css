@@ -121,7 +121,6 @@ header.primary nav a:hover {
   margin: 0;
 }
 
-/* Responsive Adjustments (Mobile First) */
 @media (max-width: 767px) {
     main {
         padding: 10px; 
