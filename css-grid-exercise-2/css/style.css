@@ -59,7 +59,6 @@ header.primary nav a:hover {
 #content {
   grid-area: content;
   display: grid;
-  grid-template-columns: 1fr; /* Single column for mobile */
   gap: 20px;
   grid-template-areas:  /* Define areas within #content */
     "blog"
@@ -136,7 +135,7 @@ header.primary nav a:hover {
       "header header"
       "content content"
       "footer footer";
-    padding: 10px;
+    padding: 10px; /* Corrected placement of padding */
   }
 
   #content {
