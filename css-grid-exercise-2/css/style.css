@@ -12,10 +12,10 @@ main {
   max-width: 950px;
   margin: 20px auto;
   padding: 20px;
-  display: grid; /* Switch to grid layout */
+  display: grid; 
   gap: 20px;
   border: 1px solid rgb(0, 0, 0);
-  grid-template-columns: 1fr 1fr; /* Two EVEN columns for larger screens */
+  grid-template-columns: 1fr 1fr; 
   grid-template-areas:
     "header header"
     "content content"
@@ -29,7 +29,7 @@ header.primary {
   padding: 20px;
   background-color: #d6d4d4;
   width: 100%;
-  box-sizing: border-box; /* Ensure padding doesn't affect the layout */
+  box-sizing: border-box; 
   margin: 0;
 }
 
@@ -65,9 +65,9 @@ header.primary nav a:hover {
   grid-area: content;
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr; /* Two EVEN columns for larger screens */
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "blog secondary"; /* Blog left, sidebar right */
+    "blog secondary"; 
 }
 
 /* Blog Section */
@@ -135,7 +135,7 @@ header.primary nav a:hover {
 /* Media Query for Larger Screens */
 @media (min-width: 768px) {
   main {
-    grid-template-columns: 1fr 1fr; /* Two EVEN columns */
+    grid-template-columns: 1fr 1fr; 
     grid-template-areas:
       "header header"
       "content content"
@@ -144,17 +144,17 @@ header.primary nav a:hover {
   }
 
   #content {
-    grid-template-columns: 1fr 1fr; /* Two EVEN columns */
+    grid-template-columns: 1fr 1fr; 
     grid-template-areas:
-      "blog secondary"; /* Blog left, sidebar right */
+      "blog secondary"; 
   }
 
   header.primary nav ul {
-    flex-direction: row; /* Horizontal nav */
+    flex-direction: row; 
   }
 
   header.primary nav li {
-    margin: 0 1rem; /* Horizontal spacing */
+    margin: 0 1rem;
   }
 }
 
@@ -165,24 +165,24 @@ header.primary nav a:hover {
   }
 
   #content {
-    grid-template-columns: 1fr; /* Single column layout on mobile */
+    grid-template-columns: 1fr; 
     grid-template-areas:
-      "blog" /* Blog section on top */
-      "secondary"; /* Sidebar section below the blog */
+      "blog" 
+      "secondary"; 
   }
 
   #blog,
   #secondary {
-    width: 100%; /* Full width for both blog and sidebar */
+    width: 100%; 
     margin-right: 0;
     flex: auto;
   }
 
   header.primary nav ul {
-    flex-direction: column; /* Stack navigation items vertically */
+    flex-direction: column; 
   }
 
   header.primary nav li {
-    margin: 0.5rem 0; /* Vertical spacing for nav items */
+    margin: 0.5rem 0; 
   }
 }
