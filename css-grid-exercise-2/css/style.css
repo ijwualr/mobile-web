@@ -13,7 +13,7 @@ main {
   display: grid;
   gap: 20px;
   border: 1px solid rgb(0, 0, 0);
-  grid-template-columns: 1fr; /* Single column for mobile */
+  grid-template-columns: 1fr; /* Default to single column on mobile */
   grid-template-areas:
     "header"
     "content"
@@ -60,6 +60,7 @@ header.primary nav a:hover {
   grid-area: content;
   display: grid;
   gap: 20px;
+  grid-template-columns: 1fr; /* Default to single column on mobile */
   grid-template-areas:  /* Define areas within #content */
     "blog"
     "secondary";
@@ -67,7 +68,7 @@ header.primary nav a:hover {
 
 /* Blog Section */
 #blog {
-  grid-area: blog; /* Assign to grid area */
+  grid-area: blog;
   padding: 0;
 }
 
@@ -100,7 +101,7 @@ header.primary nav a:hover {
 
 /* Sidebar */
 #secondary {
-  grid-area: secondary; /* Assign to grid area */
+  grid-area: secondary;
 }
 
 .widget {
@@ -139,7 +140,7 @@ header.primary nav a:hover {
   }
 
   #content {
-    grid-template-columns:  1fr 1fr; /* Two EVEN columns */
+    grid-template-columns: 1fr 1fr; /* Two EVEN columns */
     grid-template-areas:
       "blog secondary"; /* Blog left, sidebar right */
   }
