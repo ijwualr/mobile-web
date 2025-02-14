@@ -156,7 +156,7 @@ header.primary nav a:hover {
 
 @media (min-width: 767px) {
   main.cf {
-    grid-template-columns: 2fr 1fr; 
+    flex-direction: column;
     grid-template-rows: auto auto;  
     padding: 10px;
   }
