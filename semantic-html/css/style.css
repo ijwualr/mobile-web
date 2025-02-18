@@ -46,3 +46,30 @@ aside{
   float:left;
   
 }
+@media (max-width: 767px) {
+  main {
+    padding: 10px;
+  }
+
+  #content {
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+      "blog" 
+      "secondary"; 
+  }
+
+  #blog,
+  #secondary {
+    width: 100%; 
+    margin-right: 0;
+    flex: auto;
+  }
+
+  header.primary nav ul {
+    flex-direction: column; 
+  }
+
+  header.primary nav li {
+    margin: 0.5rem 0; 
+  }
+}
