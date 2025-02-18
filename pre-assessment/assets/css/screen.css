@@ -99,7 +99,8 @@ background-color:coral
 	margin-right: 20px;
 	margin-left: 20px;
 }
-@media screen and (max-width:600px){
+
+@media screen and (max-width:767px){
     header.primary ul {
      flex-direction: column;
      gap:20px;
@@ -108,5 +109,9 @@ background-color:coral
     }
 	.alert{
 		background:grey;
+	}
+	#header h1 a {
+		width: 100%;
+		height:min-content;
 	}
 }
