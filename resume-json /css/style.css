@@ -1,6 +1,298 @@
-html {
-    box-sizing: border-box;
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #ddebed;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+h2{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header (Navigation) */
+header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #007bff; 
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-size: 12px;
+  color: white; 
+  padding: 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3; 
+  border-radius: 5px;
+}
+
+/* Main Content */
+main .page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* About Section */
+#about {
+  margin-bottom: 40px;
+}
+
+#about .bio {
+  text-align: center;
+}
+
+#about .bio img {
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  border-color: solid 2px black
+}
+
+#about .details-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#about .details-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+#about .details-list li strong {
+  font-weight: bold;
+}
+
+/* Skills Section */
+#skills {
+  margin-bottom: 40px;
+}
+
+#skills .skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-links li {
+  background-color: #007bff; 
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.related-links li a {
+  color: white;
+}
+
+/* Experience Section */
+#experience {
+  margin-bottom: 40px;
+}
+
+#experience ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#experience ul li {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+#experience ul li h3 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+#experience ul li div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#experience ul li div span {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+#experience ul li p {
+  font-size: 1rem;
+}
+
+/* Education Section */
+#education {
+  margin-bottom: 40px;
+}
+
+#education .certificate {
+  margin-bottom: 20px;
+}
+
+#education .certificate h3 {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+#education .certificate span {
+  display: block;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Related Links */
+.related-links {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.related-links li {
+  margin: 10px 0;
+}
+
+.related-links a {
+  font-size: 1rem;
+  color: #0066cc;
+}
+
+.related-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+footer a {
+  color: #0066cc;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 600px) {
+  .container {
+      padding: 30px;
   }
-  *, *:before, *:after {
-    box-sizing: inherit;
+
+  nav ul {
+      justify-content: space-between;
   }
+
+  nav ul li a {
+      font-size: 18px;
+  }
+
+  #about .details-list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  #about .details-list li {
+      width: 50%;
+  }
+
+  #skills .skills-list li {
+      width: 48%; 
+      margin: 5px 1%;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+      padding: 40px;
+  }
+  #experience ul li {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  #experience ul li div {
+      flex-basis: 60%;
+  }
+
+  #education .certificate {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .related-links {
+      display: flex;
+      justify-content: center;
+  }
+
+  .related-links li {
+      margin: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      padding: 50px;
+  }
+
+  #experience ul li {
+      margin-bottom: 30px;
+  }
+}
