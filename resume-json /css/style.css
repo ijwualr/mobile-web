@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #161b42;
   color: #333;
   padding: 20px;
 }
@@ -17,7 +17,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
-  background-color: #ddebed;
+  background-color: #d7f8fd;
 }
 
 h1, h2, h3 {
@@ -46,7 +46,7 @@ header {
 }
 
 nav {
-  background-color: #007bff; 
+  background-color: #426183; 
 }
 
 nav ul {
@@ -85,7 +85,7 @@ main .page-title {
 #about {
   margin-bottom: 60px; 
   padding: 40px 0;
-  background-color: #e9f0f5;;
+  background-color: #ffffff;;
 }
 
 #about .bio {
@@ -100,9 +100,9 @@ main .page-title {
   margin-bottom: 20px; 
 }
 
-#about .details-list {
+ .details {
   list-style-type: none;
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 
@@ -231,7 +231,7 @@ footer {
   text-align: center;
   margin-top: 60px; 
   font-size: 0.9rem;
-  color: #333;
+  color: #ffffff;
 }
 
 footer a {
