@@ -16,7 +16,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0;
   background-color: #ddebed;
 }
 
@@ -25,7 +25,7 @@ h1, h2, h3 {
   color: #333;
 }
 
-h2{
+h2 {
   text-align: center;
   padding-bottom: 10px;
 }
@@ -41,7 +41,7 @@ a:hover {
 
 /* Header (Navigation) */
 header {
-  margin-bottom: 20px;
+  margin-bottom: 40px; 
   text-align: center;
 }
 
@@ -55,6 +55,7 @@ nav ul {
   list-style-type: none;
   padding: 10px;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -62,9 +63,9 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 12px;
+  font-size: 14px; 
   color: white; 
-  padding: 20px;
+  padding: 12px 20px;
   display: block;
 }
 
@@ -77,12 +78,14 @@ nav ul li a:hover {
 main .page-title {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px; 
 }
 
 /* About Section */
 #about {
-  margin-bottom: 40px;
+  margin-bottom: 60px; 
+  padding: 40px 0;
+  background-color: #e9f0f5;;
 }
 
 #about .bio {
@@ -93,7 +96,8 @@ main .page-title {
   width: 250px;
   height: 250px;
   border-radius: 25px;
-  border-color: solid 2px black
+  border: 2px solid black;
+  margin-bottom: 20px; 
 }
 
 #about .details-list {
@@ -103,8 +107,8 @@ main .page-title {
 }
 
 #about .details-list li {
-  margin-bottom: 10px;
-  font-size: 1rem;
+  margin-bottom: 15px; 
+  font-size: 1.1rem;
 }
 
 #about .details-list li strong {
@@ -113,7 +117,8 @@ main .page-title {
 
 /* Skills Section */
 #skills {
-  margin-bottom: 40px;
+  margin-bottom: 60px; 
+  padding: 40px 0;
 }
 
 #skills .skills-list {
@@ -126,17 +131,18 @@ main .page-title {
   background-color: #007bff; 
   color: white;
   padding: 10px;
-  margin: 5px 0;
+  margin: 10px 0; 
   border-radius: 5px;
   font-size: 16px;
 }
+
 .related-links li a {
   color: white;
 }
 
 /* Experience Section */
 #experience {
-  margin-bottom: 40px;
+  margin-bottom: 60px; 
 }
 
 #experience ul {
@@ -148,7 +154,7 @@ main .page-title {
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   padding: 20px;
-  margin: 10px 0;
+  margin: 20px 0; 
   border-radius: 5px;
 }
 
@@ -174,7 +180,7 @@ main .page-title {
 
 /* Education Section */
 #education {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 #education .certificate {
@@ -198,25 +204,32 @@ main .page-title {
   padding: 0;
   margin-top: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .related-links li {
-  margin: 10px 0;
+  margin: 20px 15px; 
 }
 
 .related-links a {
   font-size: 1rem;
   color: #0066cc;
+  background-color: #007bff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .related-links a:hover {
-  text-decoration: underline;
+  background-color: #0056b3;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px; 
   font-size: 0.9rem;
   color: #333;
 }
@@ -229,70 +242,164 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Media Queries for Larger Screens */
-@media (min-width: 600px) {
+/* Media Queries for Responsive Design */
+@media (max-width: 899px) {
   .container {
-      padding: 30px;
+    padding: 20px;
   }
 
   nav ul {
-      justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
   }
 
   nav ul li a {
-      font-size: 18px;
-  }
-
-  #about .details-list {
-      display: flex;
-      flex-wrap: wrap;
+    font-size: 16px;
+    padding: 10px 15px;
   }
 
   #about .details-list li {
-      width: 50%;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 15px; 
   }
 
   #skills .skills-list li {
-      width: 48%; 
-      margin: 5px 1%;
-  }
-}
-
-@media (min-width: 900px) {
-  .container {
-      padding: 40px;
-  }
-  #experience ul li {
-      display: flex;
-      justify-content: space-between;
-  }
-
-  #experience ul li div {
-      flex-basis: 60%;
-  }
-
-  #education .certificate {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    width: 100%;
+    margin-bottom: 15px; 
   }
 
   .related-links {
-      display: flex;
-      justify-content: center;
+    display: block;
+    text-align: center;
   }
 
   .related-links li {
-      margin: 0 20px;
+    margin: 10px 0;
+  }
+
+  .related-links a {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
   }
 }
 
-@media (min-width: 1200px) {
+/* Tablets and Larger Mobile (600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
   .container {
-      padding: 50px;
+    padding: 30px;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  #about .details-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #about .details-list li {
+    width: 50%;
+    margin-bottom: 15px; 
+  }
+
+  #skills .skills-list li {
+    width: 48%; 
+    margin: 5px 1%;
+  }
+
+  .related-links li {
+    width: 48%;
+    margin: 5px 1%;
+  }
+
+  .related-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about .bio img {
+    width: 250px;
+    height: 250px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+/* Larger Screens (900px to 1199px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .container {
+    padding: 40px;
   }
 
   #experience ul li {
-      margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #experience ul li div {
+    flex-basis: 60%;
+  }
+
+  #education .certificate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .related-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .related-links li {
+    margin: 0 20px;
+  }
+
+  #about .bio img {
+    width: 300px;
+    height: 300px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    padding: 15px 25px;
+  }
+}
+
+/* Desktop (1200px and larger) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 50px;
+  }
+
+  #experience ul li {
+    margin-bottom: 30px;
+  }
+
+  .related-links li {
+    margin: 0 20px;
+  }
+
+  #about .bio img {
+    width: 350px;
+    height: 350px;
+  }
+
+  nav ul li a {
+    font-size: 22px;
+    padding: 18px 30px;
   }
 }
