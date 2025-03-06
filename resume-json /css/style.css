@@ -2,6 +2,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -265,6 +266,12 @@ footer a:hover {
     padding: 10px 15px;
   }
 
+  /* Add border between nav links on mobile view */
+  nav ul li:not(:last-child) {
+    border-bottom: 2px solid white; 
+    padding-bottom: 10px; 
+  }
+
   #about .details-list li {
     width: 100%;
     font-size: 1rem;
@@ -292,7 +299,7 @@ footer a:hover {
   }
 }
 
-/* Tablets and Larger Mobile (600px to 899px) */
+/* Tablet & Mobile (600px to 899px) */
 @media (min-width: 600px) and (max-width: 899px) {
   .container {
     padding: 30px;
@@ -338,47 +345,6 @@ footer a:hover {
 
   nav ul li a {
     font-size: 16px;
-  }
-}
-
-/* Larger Screens (900px to 1199px) */
-@media (min-width: 900px) and (max-width: 1199px) {
-  .container {
-    padding: 40px;
-  }
-
-  #experience ul li {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #experience ul li div {
-    flex-basis: 60%;
-  }
-
-  #education .certificate {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .related-links {
-    display: flex;
-    justify-content: center;
-  }
-
-  .related-links li {
-    margin: 0 20px;
-  }
-
-  #about .bio img {
-    width: 300px;
-    height: 300px;
-  }
-
-  nav ul li a {
-    font-size: 20px;
-    padding: 15px 25px;
   }
 }
 
