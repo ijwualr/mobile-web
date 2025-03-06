@@ -381,4 +381,24 @@ hr {
     font-size: 22px;
     padding: 18px 30px;
   }
+
+  /* Add even spacing between the nav links and borders between them */
+  nav ul  {
+   justify-content: space-around;
+  }
+
+  nav ul li  {
+    border-left: 1px solid white; 
+    text-align: center;
+  }
+
+  nav ul li:last-child {
+    border-right: none; 
+  }
+
+  /* Optional: Add some padding to give space between the links and the border */
+  nav ul li a {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
