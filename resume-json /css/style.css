@@ -395,10 +395,4 @@ hr {
   nav ul li:last-child {
     border-right: none; 
   }
-
-  /* Optional: Add some padding to give space between the links and the border */
-  nav ul li a {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
 }
