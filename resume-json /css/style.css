@@ -104,15 +104,24 @@ main .page-title {
   margin-bottom: 20px;
 }
 
+/* Center content in details section */
 .details, .details-list {
   list-style-type: none;
   padding: 10px;
   margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px; 
+  margin-left: 10%; 
 }
 
 .details-list li {
   margin-bottom: 15px;
   font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .details-list li strong {
@@ -384,7 +393,7 @@ hr {
 
   /* Add even spacing between the nav links and borders between them */
   nav ul  {
-   justify-content: space-around;
+    justify-content: space-around;
   }
 
   nav ul li  {
