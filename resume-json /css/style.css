@@ -112,7 +112,7 @@ main .page-title {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-  margin-left: 10%;
+  margin-left: 9%;
 }
 
 .details-list li {
@@ -128,7 +128,7 @@ main .page-title {
   font-weight: bold;
 }
 
-/* Skills Section */
+/* Pages Section */
 .related-links li {
   background-color: #007bff;
   color: white;
