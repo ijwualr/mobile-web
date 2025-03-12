@@ -111,8 +111,8 @@ main .page-title {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px; 
-  margin-left: 10%; 
+  gap: 15px;
+  margin-left: 10%;
 }
 
 .details-list li {
@@ -129,17 +129,6 @@ main .page-title {
 }
 
 /* Skills Section */
-#skills {
-  margin-bottom: 60px;
-  padding: 40px 0;
-}
-
-#skills .skills-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .related-links li {
   background-color: #007bff;
   color: white;
@@ -151,6 +140,34 @@ main .page-title {
 
 .related-links li a {
   color: white;
+}
+
+/* Related Links */
+.related-links {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.related-links li {
+  margin: 20px 15px;
+}
+
+.related-links a {
+  font-size: 1rem;
+  color: #0066cc;
+  background-color: #007bff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.related-links a:hover {
+  background-color: #0056b3;
 }
 
 /* Experience Section */
@@ -211,34 +228,6 @@ main .page-title {
   margin: 5px 0;
 }
 
-/* Related Links */
-.related-links {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.related-links li {
-  margin: 20px 15px;
-}
-
-.related-links a {
-  font-size: 1rem;
-  color: #0066cc;
-  background-color: #007bff;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.related-links a:hover {
-  background-color: #0056b3;
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -258,10 +247,10 @@ footer a:hover {
 /* Enlarge the <hr> lines */
 hr {
   border: none;
-  border-top: 5px solid #007bff;  
-  margin: 40px 0;  
-  width: 80%; 
-  margin-left: auto; 
+  border-top: 5px solid #007bff;
+  margin: 40px 0;
+  width: 80%;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -285,7 +274,7 @@ hr {
     padding: 10px 15px;
   }
 
-  /* border between nav links on mobile view */
+  /* Border between nav links on mobile view */
   nav ul li:not(:last-child) {
     border-bottom: 2px solid white;
     padding-bottom: 10px;
@@ -392,16 +381,16 @@ hr {
   }
 
   /* Add even spacing between the nav links and borders between them */
-  nav ul  {
+  nav ul {
     justify-content: space-around;
   }
 
-  nav ul li  {
-    border-left: 1px solid white; 
+  nav ul li {
+    border-left: 1px solid white;
     text-align: center;
   }
 
   nav ul li:last-child {
-    border-right: none; 
+    border-right: none;
   }
 }
