@@ -98,10 +98,10 @@ main .page-title {
 }
 
 #about .bio p {
-  font-size: 1.2rem; /* Adjust font size for better readability */
-  line-height: 1.8; /* Increase line height for better spacing */
+  font-size: 1.2rem; 
+  line-height: 1.8;
   margin: 0 auto;
-  max-width: 800px; /* Limit the width of the bio text for better readability */
+  max-width: 800px; 
   color: #333;
 }
 
@@ -319,9 +319,9 @@ hr {
   }
 
   #about .bio p {
-    font-size: 1rem; /* Reduce font size on smaller screens */
-    max-width: 90%; /* Allow text to use more width */
-    margin: 0 10px; /* Add some margin to prevent text from being too close to edges */
+    font-size: 1rem; 
+    max-width: 90%; 
+    margin: 0 10px; 
   }
 
   #about .details-list li {
@@ -359,47 +359,52 @@ hr {
     margin-right: auto;
   }
 
-  nav ul li:not(:last-child) {
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
+  /* Navigation */
+  nav {
+    background-color: #426183;
+    padding: 10px 0;
   }
 
-  /* Center content in individual sections */
-  #about, #experience, #education, #skills, .related-links {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
-  }
-
-  /* Center nav links vertically in tablet view */
   nav ul {
     display: flex;
-    flex-direction: column; /* Stack the navigation items vertically */
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: center;  
+    align-items: center;      
+    list-style-type: none;
     margin: 0;
+    padding: 0;
   }
 
   nav ul li {
-    margin: 10px 0; /* Space out the items vertically */
+    margin: 0 20px; 
   }
 
   nav ul li a {
-    font-size: 18px;
-    padding: 10px 20px; /* Add padding for clickable area */
-    text-align: center;
-    background-color: #426183; /* Background color */
+    font-size: 10px;
+    padding: 12px 25px; 
     color: white;
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-weight: 600;
     border-radius: 5px;
-    display: block;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
   }
 
   nav ul li a:hover {
-    background-color: #0056b3; /* Change background on hover */
-    border-radius: 5px;
+    background-color: #0056b3; 
+    color: #fff; 
+    text-decoration: underline; 
   }
 
+  /* Remove left and right borders for the last item */
+  nav ul li:first-child {
+    border-left: none;
+  }
+
+  nav ul li:last-child {
+    border-right: none;
+  }
   #about .details-list {
     display: flex;
     flex-wrap: wrap;
@@ -425,8 +430,6 @@ hr {
     max-width: 250px;
     height: auto;
   }
-
-  /* Reduce font size of the nav links */
   nav ul li a {
     font-size: 16px;
   }
@@ -438,35 +441,53 @@ hr {
     padding: 50px;
   }
 
-  #experience ul li {
-    margin-bottom: 30px;
+  /* Navigation */
+  nav {
+    background-color: #426183;
+    padding: 10px 0;
   }
 
-  .related-links li {
-    margin: 0 20px;
-  }
-
-  #about .bio img {
-    max-width: 350px;
-    height: auto;
-  }
-
-  nav ul li a {
-    font-size: 22px;
-    padding: 18px 30px;
-  }
-
-  /* Add even spacing between the nav links and borders between them */
   nav ul {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;  /* Center the items horizontally */
+    align-items: center;      /* Vertically center the items */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   nav ul li {
-    border-left: 1px solid white;
-    text-align: center;
+    margin: 0 20px; /* Space between items */
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    padding: 12px 25px; /* Increased padding for better click area */
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase; /* Makes the text uppercase for a bolder look */
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+    color: #fff; /* Ensure text color remains white on hover */
+    text-decoration: underline; /* Adds underline on hover for better UX */
+  }
+
+  /* Remove left and right borders for the last item */
+  nav ul li:first-child {
+    border-left: none;
   }
 
   nav ul li:last-child {
     border-right: none;
+  }
+
+  /* Optional: Add a box shadow to the nav for a subtle elevation effect */
+  nav {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 }
