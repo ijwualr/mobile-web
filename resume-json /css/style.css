@@ -281,7 +281,7 @@ hr {
 }
 
 /* Media Queries */
-@media (max-width: 899px) {
+@media (max-width: 599px) {
   .container {
     padding: 20px;
   }
@@ -332,24 +332,59 @@ hr {
     font-size: 1rem;
   }
 }
-
-/* Tablet & Mobile (600px to 899px) */
-@media (min-width: 600px) and (max-width: 899px) {
+/* Tablet & Mobile (600px to 1199px) */
+@media (min-width: 600px) and (max-width: 1199px) {
   .container {
     padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav ul li:not(:last-child) {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
   }
 
+
+  /* Center content in individual sections */
+  #about, #experience, #education, #skills, .related-links {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+
+  /* Center nav links vertically in tablet view */
   nav ul {
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column; /* Stack the navigation items vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Space out the items vertically */
   }
 
   nav ul li a {
     font-size: 18px;
+    padding: 10px 20px; /* Add padding for clickable area */
+    text-align: center;
+    background-color: #426183; /* Background color */
+    color: white;
+    border-radius: 5px;
+    display: block;
+  }
+
+  nav ul li a:hover {
+    background-color: #0056b3; /* Change background on hover */
+    border-radius: 5px;
   }
 
   #about .details-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   #about .details-list li {
@@ -367,20 +402,17 @@ hr {
     margin: 5px 1%;
   }
 
-  .related-links {
-    display: flex;
-    justify-content: center;
-  }
-
   #about .bio img {
     max-width: 250px;
     height: auto;
   }
 
+  /* Reduce font size of the nav links */
   nav ul li a {
     font-size: 16px;
   }
 }
+
 
 /* Desktop (1200px and larger) */
 @media (min-width: 1200px) {
