@@ -43,7 +43,7 @@
         "https://github.com/ijwualr",
         "https://www.linkedin.com/in/isaac-wilson-501566300/"
       ],
-      "knowsAbout": ["HTML and CSS", "Python and Java", "Creative Skills", "Communication and Leadership Skills"],
+      "knowsAbout": ["HTML","CSS", "Python", "Javascript" "Creative Skills", "Leadership Skills"],
       "worksFor": [{
           "@type": "Organization",
           "name": "West Bauxite Missionary Baptist Church",
@@ -58,8 +58,8 @@
         },
         {
           "@type": "Organization",
-          "name": "UALR Campus Living",
-          "jobTitle": "Resident Assistant",
+          "name": "UALR Trojan Transition Office",
+          "jobTitle": "Orientation Leader",
           "startDate": "2024",
           "endDate": "2025",
           "description": "Mentor, guide, and resource for incoming students during the orientation program.",
@@ -68,6 +68,18 @@
             "@type": "PostalAddress",
             "addressLocality": "Little Rock, USA"
           }
+          {
+            "@type": "Organization",
+            "name": "UALR Campus Living",
+            "jobTitle": "Resident Assistant",
+            "startDate": "2024",
+            "endDate": "2025",
+            "description": "Helping residents complete daily tasks in care facilities.",
+            "url": "https://ualr.edu/housing/",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Little Rock, USA"
+            }
         }
       ],
       "alumniOf": {
@@ -148,13 +160,15 @@
       <hr class="fade-in">
       <h2 class="fade-in">Skills</h2>
       <ul class="skills-list fade-in">
-        <li class="skill fade-in">HTML and CSS</li>
-        <li class="skill fade-in">Python and Java</li>
+        <li class="skill fade-in">HTML</li>
+        <li class="skill fade-in">CSS</li>
+        <li class="skill fade-in">Python</li>
+        <li class="skill fade-in">Javascript</li>
         <li class="skill fade-in">Creative Skills</li>
-        <li class="skill fade-in">Communication and Leadership Skills</li>
+        <li class="skill fade-in">Leadership Skills</li>
       </ul>
     </section>
-
+    
     <section id="experience" class="fade-in">
       <hr class="fade-in">
       <h2 class="fade-in">Experience</h2>
@@ -178,6 +192,19 @@
         <i><span class="fade-in">Trojan Transition and Assistance Center</span></i>
           <br>
           <a href="https://ualr.edu/newstudents/orientation/" aria-label="New Student Orientation Website" class="fade-in">New Student Orientation Website</a>
+          <span class="fade-in">Little Rock, AR</span>
+        </span>
+        <div class="fade-in">
+          <span class="fade-in">2024</span> - <span class="fade-in">2025</span>
+        </div>
+      </article>
+      <br>
+      <article class="job fade-in">
+        <h3 class="fade-in">Resident Assitant</h3>
+        <span class="fade-in">
+        <i><span class="fade-in">UALR Campus Living</span></i>
+          <br>
+          <a href="https://ualr.edu/housing/" aria-label="Campus Living Website" class="fade-in">Campus Living Website</a>
           <span class="fade-in">Little Rock, AR</span>
         </span>
         <div class="fade-in">
@@ -231,6 +258,17 @@
       });
     });
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const skillsListItems = document.querySelectorAll("#skills .skills-list li");
+    
+    // Delay the animation for each skill item progressively
+    skillsListItems.forEach((item, index) => {
+      item.style.animationDelay = `${index * 0.3}s`;  // Delay each item by 0.3s more than the previous one
+    });
+  });
+</script>
 
 </body>
 

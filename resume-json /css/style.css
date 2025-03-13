@@ -134,7 +134,7 @@ main .page-title {
   color: white;
   padding: 10px;
   margin: 10px 0;
-  border-radius: 5px;
+  border-radius: 1px;
   font-size: 16px;
 }
 
@@ -252,6 +252,31 @@ hr {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#skills .skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills .skills-list li {
+  margin: 10px;
+}
+
+#skills .skills-list li  {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #194370;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 /* Media Queries */
@@ -394,3 +419,4 @@ hr {
     border-right: none;
   }
 }
+
