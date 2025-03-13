@@ -94,8 +94,18 @@ main .page-title {
 
 #about .bio {
   text-align: center;
+  padding: 20px;
 }
 
+#about .bio p {
+  font-size: 1.2rem; /* Adjust font size for better readability */
+  line-height: 1.8; /* Increase line height for better spacing */
+  margin: 0 auto;
+  max-width: 800px; /* Limit the width of the bio text for better readability */
+  color: #333;
+}
+
+/* Bio Image */
 #about .bio img {
   width: 100%;
   max-width: 250px;
@@ -281,6 +291,8 @@ hr {
 }
 
 /* Media Queries */
+
+/* Mobile (Max-width: 599px) */
 @media (max-width: 599px) {
   .container {
     padding: 20px;
@@ -304,6 +316,12 @@ hr {
   nav ul li:not(:last-child) {
     border-bottom: 2px solid white;
     padding-bottom: 10px;
+  }
+
+  #about .bio p {
+    font-size: 1rem; /* Reduce font size on smaller screens */
+    max-width: 90%; /* Allow text to use more width */
+    margin: 0 10px; /* Add some margin to prevent text from being too close to edges */
   }
 
   #about .details-list li {
@@ -332,6 +350,7 @@ hr {
     font-size: 1rem;
   }
 }
+
 /* Tablet & Mobile (600px to 1199px) */
 @media (min-width: 600px) and (max-width: 1199px) {
   .container {
@@ -339,11 +358,11 @@ hr {
     margin-left: auto;
     margin-right: auto;
   }
+
   nav ul li:not(:last-child) {
     border-bottom: 2px solid white;
     padding-bottom: 10px;
   }
-
 
   /* Center content in individual sections */
   #about, #experience, #education, #skills, .related-links {
@@ -412,7 +431,6 @@ hr {
     font-size: 16px;
   }
 }
-
 
 /* Desktop (1200px and larger) */
 @media (min-width: 1200px) {
