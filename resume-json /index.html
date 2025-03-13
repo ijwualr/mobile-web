@@ -2,15 +2,19 @@
 <html lang="en">
 
 <head>
-  <script src="https://kit.fontawesome.com/44573aacf7.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isaac Wilson's personal website with resume, skills, and experience.">
+  <title>Isaac Wilson - Resume</title>
+
+  <!-- External Resources -->
+  <script src="https://kit.fontawesome.com/44573aacf7.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="Java" href="js/app.js">
-  
-  <!-- JSON-LD Schema markup -->
-  <script type="JSON-LD">
+  <script src="js/app.js" defer></script>
+
+  <!-- JSON-LD Schema Markup -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
@@ -43,8 +47,9 @@
         "https://github.com/ijwualr",
         "https://www.linkedin.com/in/isaac-wilson-501566300/"
       ],
-      "knowsAbout": ["HTML","CSS", "Python", "Javascript" "Creative Skills", "Leadership Skills"],
-      "worksFor": [{
+      "knowsAbout": ["HTML", "CSS", "Python", "JavaScript", "Creative Skills", "Leadership Skills"],
+      "worksFor": [
+        {
           "@type": "Organization",
           "name": "West Bauxite Missionary Baptist Church",
           "jobTitle": "Ministry Worker",
@@ -68,24 +73,25 @@
             "@type": "PostalAddress",
             "addressLocality": "Little Rock, USA"
           }
-          {
-            "@type": "Organization",
-            "name": "UALR Campus Living",
-            "jobTitle": "Resident Assistant",
-            "startDate": "2024",
-            "endDate": "2025",
-            "description": "Helping residents complete daily tasks in care facilities.",
-            "url": "https://ualr.edu/housing/",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Little Rock, USA"
-            }
+        },
+        {
+          "@type": "Organization",
+          "name": "UALR Campus Living",
+          "jobTitle": "Resident Assistant",
+          "startDate": "2024",
+          "endDate": "2025",
+          "description": "Helping residents complete daily tasks in care facilities.",
+          "url": "https://ualr.edu/housing/",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Little Rock, USA"
+          }
         }
       ],
       "alumniOf": {
-        "@type": "Educational Organization",
+        "@type": "EducationalOrganization",
         "name": "University of Arkansas at Little Rock",
-        "description": "The University of Arkansas at Little Rock is a public research university in Little Rock, Arkansas.",
+        "description": "A public research university in Little Rock, Arkansas.",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Little Rock, USA"
@@ -96,7 +102,6 @@
     }
   </script>
 
-  <title>Resume</title>
 </head>
 
 <body>
@@ -112,16 +117,19 @@
     </nav>
   </header>
 
-  <!-- Main -->
   <main class="container">
     <h1 class="page-title">Isaac Wilson</h1>
+
+    <!-- About Section -->
     <section id="about">
       <div class="bio">
         <img src="https://isaucecom.files.wordpress.com/2022/11/img_20221109_062151_356.webp" alt="Isaac Wilson">
         <h2 class="fade-in">Personal Details</h2>
-        <p class="fade-in">I am currently a member serving at West Bauxite Missionary Baptist Church, located in Bauxite, Arkansas. My goal is to share my Spiritual Journey with others and to help Christians follow the scripture in order for them to understand what God has established for them within their lives.</p>
+        <p class="fade-in">I am currently a member serving at West Bauxite Missionary Baptist Church, located in Bauxite, Arkansas. My goal is to share my Spiritual Journey with others and help Christians follow the scripture to understand God's purpose for their lives.</p>
       </div>
+
       <hr class="fade-in">
+      
       <dl class="details fade-in">
         <b><dt class="fade-in">Name:</dt></b>
         <dd class="fade-in">Isaac Wilson</dd>
@@ -132,13 +140,9 @@
         <b><dt class="fade-in">Location:</dt></b>
         <dd class="fade-in">Little Rock, Arkansas</dd>
         <b><dt class="fade-in">Telephone:</dt></b>
-        <dd class="fade-in">
-          <a href="tel:501-303-9912" class="fade-in">501-303-9912</a>
-        </dd>
+        <dd class="fade-in"><a href="tel:501-303-9912" class="fade-in">501-303-9912</a></dd>
         <b><dt class="fade-in">Email:</dt></b>
-        <dd class="fade-in">
-          <a href="mailto:ijwilson@ualr.edu" class="fade-in">ijwilson@ualr.edu</a>
-        </dd>
+        <dd class="fade-in"><a href="mailto:ijwilson@ualr.edu" class="fade-in">ijwilson@ualr.edu</a></dd>
         <b><dt class="fade-in">Address:</dt></b>
         <dd class="fade-in">
           <span>2801 South University,</span>
@@ -146,7 +150,9 @@
           <span>72204</span>
         </dd>
       </dl>
+
       <hr class="fade-in">
+      
       <h2 class="fade-in">Pages</h2>
       <ul class="related-links fade-in">
         <li><a href="https://github.com/ijwualr" aria-label="Isaac Wilson's GitHub Profile" class="fade-in">Github Profile <i class="fa-brands fa-github"></i></a></li>
@@ -155,7 +161,8 @@
         <li><a href="https://wayandsoul.blog/" aria-label="Isaac Wilson's Personal Blog" class="fade-in">Personal Blog <i class="fa-solid fa-blog"></i></a></li>
       </ul>
     </section>
-    
+
+    <!-- Skills Section -->
     <section id="skills" class="fade-in">
       <hr class="fade-in">
       <h2 class="fade-in">Skills</h2>
@@ -163,62 +170,61 @@
         <li class="skill fade-in">HTML</li>
         <li class="skill fade-in">CSS</li>
         <li class="skill fade-in">Python</li>
-        <li class="skill fade-in">Javascript</li>
+        <li class="skill fade-in">JavaScript</li>
         <li class="skill fade-in">Creative Skills</li>
         <li class="skill fade-in">Leadership Skills</li>
       </ul>
     </section>
-    
+
+    <!-- Experience Section -->
     <section id="experience" class="fade-in">
       <hr class="fade-in">
       <h2 class="fade-in">Experience</h2>
       <article class="job fade-in">
-        <h3 class="fade-in">Ministry Worker</h3>
-        <div class="fade-in">
-          <i><span class="fade-in">West Bauxite Missionary Baptist Church</span></div></i>
-          <p class="fade-in">"Spiritual leader who guides and nurtures a congregation within the Baptist tradition."</p>
-          <span class="fade-in">
-            <a href="https://www.wbmbc.org/" class="fade-in">Church Website</a>
-            <span class="fade-in">Bauxite, AR</span>
-          </span>
-          <br>
-          <span class="fade-in">2019 - Present</span>
-        </div>
-      </article>
-      <br>
-      <article class="job fade-in">
-        <h3 class="fade-in">Orientation Leader</h3>
+        <i><h3 class="fade-in">Ministry Worker</h3></i>
         <span class="fade-in">
-        <i><span class="fade-in">Trojan Transition and Assistance Center</span></i>
+          <i><span class="fade-in">West Bauxite Missionary Baptist Church</span></i>
           <br>
-          <a href="https://ualr.edu/newstudents/orientation/" aria-label="New Student Orientation Website" class="fade-in">New Student Orientation Website</a>
+          <i><a href="https://www.wbmbc.org/" class="fade-in">Church Website</a></i>
+          <br>
+          <i><span class="fade-in">Bauxite, AR</span></i>
+        </span>
+        <i><p class="fade-in">Spiritual leader who guides and nurtures a congregation within the Baptist tradition.</p></i>
+        <i><span class="fade-in">2019 - Present</span></i>
+      </article>
+<br>
+      <article class="job fade-in">
+        <i><h3 class="fade-in">Orientation Leader</h3></i>
+        <span class="fade-in">
+          <i><span class="fade-in">Trojan Transition and Assistance Center</span><i>
+          <br>
+          <a href="https://ualr.edu/newstudents/orientation/" class="fade-in">New Student Orientation Website</a><br>
           <span class="fade-in">Little Rock, AR</span>
         </span>
-        <div class="fade-in">
-          <span class="fade-in">2024</span> - <span class="fade-in">2025</span>
-        </div>
+        <i><p class="fade-in">Mentor, guide, and resource for incoming students during the orientation program.</p></i>
+        <span class="fade-in">2024 - 2025</span>
       </article>
-      <br>
+<br>
       <article class="job fade-in">
         <h3 class="fade-in">Resident Assistant</h3>
         <span class="fade-in">
-        <i><span class="fade-in">UALR Campus Living</span></i>
+          <i><span class="fade-in">UALR Campus Living</span></i>
           <br>
-          <a href="https://ualr.edu/housing/" aria-label="Campus Living Website" class="fade-in">Campus Living Website</a>
+          <a href="https://ualr.edu/housing/" class="fade-in">Campus Living Website</a><br>
           <span class="fade-in">Little Rock, AR</span>
         </span>
-        <div class="fade-in">
-          <span class="fade-in">2024</span> - <span class="fade-in">2025</span>
-        </div>
+        <i><p class="fade-in">Helping residents complete daily tasks in care facilities.</p></i>
+        <span class="fade-in">2024 - 2025</span>
       </article>
     </section>
 
+    <!-- Education Section -->
     <section id="education" class="fade-in">
       <hr class="fade-in">
       <h2 class="fade-in">Education</h2>
       <article class="certificate fade-in">
         <h3 class="fade-in"><abbr title="Bachelor of Science">Bachelor in Web Design / Development</abbr></h3>
-      <i><span class="fade-in">University of Arkansas at Little Rock</span></i>
+        <i><span class="fade-in">University of Arkansas at Little Rock</span></i>
         <span class="fade-in">Little Rock, AR</span>
         <span class="fade-in">2023-2027</span>
       </article>
@@ -232,8 +238,8 @@
     </div>
   </footer>
 
+  <!-- Fade-in Effect Styles -->
   <style>
-    /* Adding Fade-in Effect with transition */
     .fade-in {
       opacity: 0;
       transform: translateY(20px);
@@ -246,8 +252,8 @@
     }
   </style>
 
+  <!-- Scroll-based Fade-in Script -->
   <script>
-    // Scroll event listener to apply the fade-in effect when elements are in the viewport
     window.addEventListener('scroll', function () {
       const fadeElements = document.querySelectorAll('.fade-in');
       fadeElements.forEach((el) => {
@@ -258,7 +264,6 @@
       });
     });
   </script>
-
 </body>
 
 </html>

@@ -97,8 +97,9 @@ main .page-title {
 }
 
 #about .bio img {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
   border-radius: 25px;
   border: 2px solid black;
   margin-bottom: 20px;
@@ -268,7 +269,7 @@ hr {
   margin: 10px;
 }
 
-#skills .skills-list li  {
+#skills .skills-list li {
   display: inline-block;
   padding: 12px 20px;
   font-size: 1rem;
@@ -372,8 +373,8 @@ hr {
   }
 
   #about .bio img {
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    height: auto;
   }
 
   nav ul li a {
@@ -396,8 +397,8 @@ hr {
   }
 
   #about .bio img {
-    width: 350px;
-    height: 350px;
+    max-width: 350px;
+    height: auto;
   }
 
   nav ul li a {
@@ -419,4 +420,3 @@ hr {
     border-right: none;
   }
 }
-
