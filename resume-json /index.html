@@ -107,7 +107,9 @@
   <header class="container" id="top">
     <!-- Main navigation -->
     <nav class="primary">
-      <button class="hamburger" id="hamburger-menu">☰</button>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        &#9776; <!-- Hamburger icon -->
+      </button>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#pages">Pages</a></li>
@@ -257,6 +259,17 @@
         if (rect.top <= window.innerHeight && rect.bottom >= 0) {
           el.classList.add('scrolled');
         }
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger');
+      const nav = document.querySelector('nav');
+
+      hamburger.addEventListener('click', function() {
+        // Toggle the active class on nav
+        nav.classList.toggle('active');
       });
     });
   </script>

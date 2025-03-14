@@ -291,19 +291,32 @@ hr {
 
 /* Mobile (Max-width: 599px) */
 @media (max-width: 599px) {
+  /* Initially hide the navigation on mobile */
   .container {
     padding: 20px;
   }
-
-  /* Mobile dropdown menu */
   nav ul {
-    display: none; /* Hide the default navigation on mobile */
+    display: none; /* Hide the menu on mobile */
     flex-direction: column;
     align-items: center;
     padding: 0;
     margin: 0;
   }
 
+  /* Hamburger button (visible only on mobile) */
+  .hamburger {
+    display: block;
+    background: #426183;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 60px;
+  }
+
+  /* Menu links styling */
   nav ul li {
     margin: 10px 0;
     width: 100%;
@@ -322,58 +335,9 @@ hr {
     padding-bottom: 10px;
   }
 
-  /* Hamburger button (visible only on mobile) */
-  .hamburger {
-    display: block;
-    background: #426183;
-    border: none;
-    padding: 10px;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    width: 40px;
-    height: 60px;
-  }
-
-  /* Personal Details */
-  .details {
-    display: block;
-    padding: 0;
-    margin: 0;
-  }
-
-  .details dt, .details dd {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .details dt {
-    padding-top: 10px;
-    border-top: 1px solid #2f2f2f;
-  }
-
-  .details dd {
-    padding-bottom: 10px;
-  }
-
-  #skills .skills-list li {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .related-links {
-    display: block;
-    text-align: center;
-  }
-
-  .related-links li {
-    margin: 10px 0;
-  }
-
-  .related-links a {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
+  /* Show the menu when toggled (JavaScript will add/remove this class) */
+  nav.active ul {
+    display: flex;
   }
 }
 
