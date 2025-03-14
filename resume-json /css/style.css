@@ -295,7 +295,9 @@ hr {
     padding: 20px;
   }
 
+  /* Mobile dropdown menu */
   nav ul {
+    display: none; /* Hide the default navigation on mobile */
     flex-direction: column;
     align-items: center;
     padding: 0;
@@ -320,10 +322,17 @@ hr {
     padding-bottom: 10px;
   }
 
-  #about .bio p {
-    font-size: 1rem;
-    max-width: 90%;
-    margin: 0 10px;
+  /* Hamburger button (visible only on mobile) */
+  .hamburger {
+    display: block;
+    background: #426183;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 60px;
   }
 
   /* Personal Details */
@@ -370,6 +379,9 @@ hr {
 
 /* Tablet & Mobile (600px to 1199px) */
 @media (min-width: 600px) and (max-width: 1199px) {
+  .hamburger {
+    display: none; /* Hide the hamburger on tablet and desktop */
+  }
   .container {
     padding: 30px;
     margin-left: auto;
@@ -463,6 +475,9 @@ hr {
 
 /* Desktop (1200px and larger) */
 @media (min-width: 1200px) {
+  .hamburger {
+    display: none; /* Hide the hamburger on tablet and desktop */
+  }
   .container {
     padding: 50px;
   }
@@ -516,3 +531,4 @@ hr {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 }
+
