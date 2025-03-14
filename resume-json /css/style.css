@@ -435,13 +435,7 @@ hr {
     padding: 10px;
   }
 
-  .details dt, .details dd {
-    border-top: 1px solid #2f2f2f; 
-  }
-
-  .details dd:last-child {
-    border-bottom: 1px solid #2f2f2f;
-  }
+ 
 
   /* Skills List */
   #skills .skills-list li {
