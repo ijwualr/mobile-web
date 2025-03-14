@@ -281,7 +281,6 @@ hr {
   .container {
     padding: 20px;
   }
-
   /* Hide the navigation menu by default */
   nav ul {
     display: none; /* Initially hide the menu */
@@ -290,73 +289,60 @@ hr {
     padding: 0;
     margin: 0;
   }
-
   /* Style each list item in the nav */
   nav ul li {
     margin: 10px 0;
     width: 100%;
   }
-
   nav ul li a {
     font-size: 16px;
     padding: 10px 15px;
     width: 100%;
     text-align: center;
   }
-
   /* Border between nav links on mobile view */
   nav ul li:not(:last-child) {
     border-bottom: 2px solid white;
     padding-bottom: 10px;
   }
-
   #about .bio p {
     font-size: 1rem;
     max-width: 90%;
     margin: 0 10px;
   }
-
   /* Personal Details */
   .details {
     display: block;
     padding: 0;
     margin: 0;
   }
-
   .details dt, .details dd {
     width: 100%;
     margin-bottom: 10px;
   }
-
   .details dt {
     padding-top: 10px;
     border-top: 1px solid #2f2f2f;
   }
-
   .details dd {
     padding-bottom: 10px;
   }
-
   #skills .skills-list li {
     width: 100%;
     margin-bottom: 15px;
   }
-
   .related-links {
     display: block;
     text-align: center;
   }
-
   .related-links li {
     margin: 10px 0;
   }
-
   .related-links a {
     width: 100%;
     padding: 12px;
     font-size: 1rem;
   }
-
   /* Hamburger button style */
   .hamburger {
     display: block;
@@ -369,14 +355,11 @@ hr {
     width: 40px;
     height: 60px;
   }
-
   /* Show the menu when the active class is added */
   nav.active ul {
-    display: flex; /* Display the menu */
+    display: flex; 
   }
 }
-
-/* Keep other styles unchanged for tablet and desktop */
 
 /* Tablet & Mobile (600px to 1199px) */
 @media (min-width: 600px) and (max-width: 1199px) {
