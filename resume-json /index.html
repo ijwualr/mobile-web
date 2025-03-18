@@ -249,6 +249,25 @@
       transform: translateY(0);
     }
   </style>
+  <script>
+    // Select the skills section
+    const skillsSection = document.querySelector('#skills');
+    
+    // Create an intersection observer to observe when the skills section is in view
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add the class to trigger animation when the skills section is in view
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target); // Stop observing once the animation starts
+        }
+      });
+    }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+    
+    // Start observing the skills section
+    observer.observe(skillsSection);
+  </script>
+  
 </body>
 
 </html>
