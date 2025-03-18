@@ -431,7 +431,7 @@ hr {
     color: #fff;
     text-decoration: underline;
   }
-  /* Personal Details Section (making it same as desktop) */
+  /* Personal Details Section */
   .details {
     list-style-type: none;
     padding: 0;
@@ -539,15 +539,15 @@ hr {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  opacity: 0; /* Initially hidden */
-  transform: translateX(-30px); /* Start off to the left */
-  transition: opacity 2s, transform 2s; /* Smooth transition */
+  opacity: 0; 
+  transform: translateX(-30px); 
+  transition: opacity 2s, transform 2s; 
 }
 
 /* Fade In and Slide Animation for .in-view class */
 #skills.in-view .skills-list li {
-  opacity: 1; /* Make visible when the section is in view */
-  transform: translateX(0); /* Move to final position */
+  opacity: 1; 
+  transform: translateX(0); 
 }
 
 /* Add delay for each list item to create the staggered effect */
