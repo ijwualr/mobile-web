@@ -12,7 +12,6 @@
   --font-family-base: "Open Sans", sans-serif;
   --font-family-alt: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
 body {
   font-family: var(--font-family-base);
   margin: 0;
@@ -22,7 +21,6 @@ body {
   min-height: 100vh;
   position: relative;
 }
-
 header {
   background-color: var(--header-bg-color);
   opacity: 1;
@@ -41,7 +39,6 @@ header {
   margin-bottom: var(--spacing-unit);
   margin-top: 0;
 }
-
 .img-right {
   float: right;
   margin: 15px 20px var(--spacing-unit) var(--spacing-unit);
@@ -50,7 +47,6 @@ header {
   border-radius: var(--image-border-radius);
   max-width: 100px;
 }
-
 nav.primary ul {
   display: flex;
   flex-direction: row;
@@ -63,7 +59,6 @@ nav.primary ul {
   padding: var(--spacing-unit);
   list-style-type: none;
 }
-
 nav.primary ul li a {
   display: block;
   padding: 15px 20px;
@@ -75,12 +70,10 @@ nav.primary ul li a {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
-
 nav.primary ul li a:hover {
   background-color: var(--nav-link-hover-bg-color);
   box-shadow: 5px 5px 5px 0px rgba(22, 32, 77, 0.75);
 }
-
 #content {
   display: flex;
   flex-direction: column;
@@ -92,20 +85,17 @@ nav.primary ul li a:hover {
   padding: var(--spacing-unit);
   flex-grow: 1;
 }
-
 #content p {
   margin-left: var(--spacing-unit);
   font-family: var(--font-family-alt);
   color: var(--text-color);
 }
-
 #content h2 {
   color: var(--text-color);
   border-bottom: 2px solid black;
   margin-left: 25px;
   border-radius: 10px;
 }
-
 #content li {
   list-style-type: square;
   margin-left: var(--spacing-unit);
