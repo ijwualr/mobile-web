@@ -1,94 +1,52 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Mobile Web | Isaac Wilson</title>
-<meta name="description" content="Keywo rd Rich Description">
-<meta name="author" content="Isaac Wilson">
-<link href="hompage/assets/css/style.css" rel="stylesheet" />
-<style>
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: sans-serif;
-        line-height: 1.5;
-    }
-    
-    .wrapper {
-        width: 90%;       
-        max-width: 1100px; 
-        margin: 0 auto;   
-        padding: 1rem;
-    }
-    
-    /* Image adjustments */
-    .img-right {
-        width: 100%;       
-        max-width: 300px;  
-        height: auto;      
-        display: block;    
-        margin: 0 auto 1rem;  
-        float: none;      
-    }
-     header.primary h1 {
-        font-size: 1.8rem; 
-        text-align: center; 
-      }
-
-    /* Navigation adjustments */
-    nav.primary ul {
-        list-style: none;
-        padding: 0;
-        display: flex;        
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    nav.primary li {
-        margin-bottom: 0.5rem;    
-        width: 100%;              
-    }
-
-    nav.primary a {
-        display: block;          
-        padding: 0.75rem 1rem;  
-        text-decoration: none;
-        background-color: #f0f0f0; 
-        border: 1px solid #ccc; 
-        border-radius: 4px;    
-        text-align: center;   
-        width: 100%;
-    }
-    nav.primary a:hover {
-        background-color: #ddd;  
-    }
-
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Web | Isaac Wilson</title>
+    <meta name="description" content="Keyword Rich Description">
+    <meta name="author" content="Isaac Wilson">
+    <link href="hompage/assets/css/style.css" rel="stylesheet" />
 </head>
 <body>
-<div class="wrapper">
-<main>
-<img src="https://isaucecom.files.wordpress.com/2022/11/img_20221109_062151_356.webp" alt="Profile Picture" class="img-right" />
-<header role="banner" class="primary">
-<h1>Isaac Wilson - Mobile Web Assignments</h1>
-</header>
-<nav class="primary" id="list">
-<ul>
-<li><a href="pre-assessment/index.html">Pre Assessment</a></li>
-<li><a href="semantic-html/index.html">Semantic HTML</a></li>
-<li><a href="css-grid-exercise-1/index.html">CSS Grid Example 1</a></li>
-<li><a href="css-grid-exercise-2/index.html">CSS Grid Example 2</a></li>
-<li><a href="hompage/assets/flexbox-defense.png">Flexbox Defense</a></li>
-<li><a href="resume-json /index.html">Json Resume</a></li>
-<li><a href="hompage/assets/Final-Site-Planning-.png">Final Site Planning</a></li>
-</ul> 
-</nav>
-</div>
+    <div class="wrapper">
+        <main>
+            <img src="https://isaucecom.files.wordpress.com/2022/11/img_20221109_062151_356.webp" alt="Profile Picture" class="img-right" />
+            <header role="banner" class="primary">
+                <h1>Isaac Wilson - Mobile Web Assignments</h1>
+            </header>
+            <nav class="primary" id="list">
+                <ul>
+                    <li><a href="pre-assessment/index.html">Pre Assessment</a></li>
+                    <li><a href="semantic-html/index.html">Semantic HTML</a></li>
+                    <li><a href="css-grid-exercise-1/index.html">CSS Grid Example 1</a></li>
+                    <li><a href="css-grid-exercise-2/index.html">CSS Grid Example 2</a></li>
+                    <li><a href="hompage/assets/flexbox-defense.png">Flexbox Defense</a></li>
+                    <li><a href="resume-json /index.html">Json Resume</a></li>
+                    <li><a href="hompage/assets/Final-Site-Planning-.png">Final Site Planning</a></li>
+                </ul> 
+            </nav>
+        </main>
+    </div>
+    <!-- Loading transition overlay -->
+    <div id="transition-overlay" class="transition-container">
+        <div>Loading...</div>
+    </div>
+    <script>
+        // Get the transition overlay element
+        const transitionOverlay = document.getElementById('transition-overlay');
+        // Add event listener to each link
+        document.querySelectorAll('nav.primary a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default link action
+                // Show the loading transition
+                transitionOverlay.classList.add('show');
+                // After a short delay (time for transition), change the page
+                setTimeout(() => {
+                    window.location.href = this.href; // Redirect to the clicked page
+                }, 500); // Match this time with transition duration (0.5s in this case)
+            });
+        });
+    </script>
 </body>
 </html>
