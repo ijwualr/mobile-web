@@ -1,8 +1,7 @@
-=<!doctype html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <link rel="icon" type="image/x-icon" href="assets/West Bauxite.jpeg" alt="Website Favicon">
+  <link rel="icon" type="image/x-icon" href="assets/West-Bauxite.jpeg" alt="Website Favicon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>West Bauxite Missionary Baptist Church</title>
@@ -102,6 +101,21 @@
         background-attachment: scroll;
       }
     }
+
+    /* Dropdown hover effect */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #f8f9fa;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      padding: 10px;
+      border-radius: 4px;
+    }
+
   </style>
 </head>
 
@@ -134,7 +148,8 @@
     </div>
   </nav>
 
-  <div id="about" class="section" style="margin-top: 500px;"> 
+  <!-- About Section -->
+  <div id="about" class="section" style="margin-top: 450px;"> 
     <div class="container">
       <h1 class="section-title">About Us</h1>
       <p class="text-center">Our church is a community of faith, dedicated to serving and supporting one another.</p>
@@ -146,8 +161,6 @@
     <div class="container">
       <h2 class="section-title">Mission Statements</h2>
       <p class="text-center">We believe in spreading God's love through missions both locally and globally.</p>
-      <ul>
-      </ul>
     </div>
   </div>
 
@@ -156,12 +169,84 @@
     <div class="container">
       <h2 class="section-title">Our Services</h2>
       <p class="text-center">Join us for our weekly services and events!</p>
-      <ul>
-        <li>Sunday School - 9:30 AM - 10:30 AM</li>
-        <li>Sunday Services - 10:45 AM - 12:00 PM</li>
-        <li>Bible Study - Mondays 7:00 PM</li>
-        <li>AWANA Children's Ministry - 5:45 PM - 8:00 PM</li>
-      </ul>
+
+      <!-- Row for Services -->
+      <div class="row text-center">
+        
+        <!-- Sunday School -->
+        <div class="col-12 col-md-4 mb-3">
+          <div class="dropdown">
+            <button class="btn btn-secondary" type="button">
+              Sunday School
+            </button>
+            <div class="dropdown-menu">
+              <p>9:45 - 10:30 AM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sunday Morning Service -->
+        <div class="col-12 col-md-4 mb-3">
+          <div class="dropdown">
+            <button class="btn btn-secondary" type="button">
+              Sunday Morning Service
+            </button>
+            <div class="dropdown-menu">
+              <p>10:45 AM - 12:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sunday Evening Service -->
+        <div class="col-12 col-md-4 mb-3">
+          <div class="dropdown">
+            <button class="btn btn-secondary" type="button">
+              Sunday Evening Service
+            </button>
+            <div class="dropdown-menu">
+              <p>6:00 - 7:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Men and Women's Bible Study -->
+        <div class="col-12 col-md-4 mb-3">
+          <div class="dropdown">
+            <button class="btn btn-secondary" type="button">
+              Men and Women's Bible Study
+            </button>
+            <div class="dropdown-menu">
+              <p>Mondays from 6:00 - 7:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adult Bible Study -->
+        <div class="col-12 col-md-4 mb-3">
+          <div class="dropdown">
+            <button class="btn btn-secondary" type="button">
+              Adult Bible Study
+            </button>
+            <div class="dropdown-menu">
+              <p>Wednesdays from 7:00 - 8:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AWANA Children's Ministry -->
+        <div class="col-12 col-md-4 mb-3">
+          <div class="dropdown">
+            <button class="btn btn-secondary" type="button">
+              AWANA Children's Ministry
+            </button>
+            <div class="dropdown-menu">
+              <p>Wednesdays from 5:15 - 8:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- End of Row -->
+      
     </div>
   </div>
 
@@ -197,6 +282,10 @@
 
     </div>
   </div>
+
+  <footer class="text-center">
+    <p>5701 Highway 183, Bauxite, AR 72011 </p>
+  </footer>
 
   <!-- Modals -->
   <div class="modal fade" id="pastorModal" tabindex="-1" aria-labelledby="pastorModalLabel" aria-hidden="true">
@@ -236,10 +325,6 @@
       </div>
     </div>
   </div>
-
-  <footer class="text-center">
-    <p>5701 Highway 183, Bauxite, AR 72011 </p>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
