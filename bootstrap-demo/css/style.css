@@ -131,4 +131,67 @@ html {
     color: white !important;
     font-size: 0.95rem; 
   }
+  /* Table Styling */
+.table {
+  background-color: #f8f9fa; /* Light background to contrast with dark section */
+  color: #333; /* Dark text color */
+  border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+.table-bordered {
+  border: 2px solid #ccc; /* Light borders for the table */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f1f1f1; /* Alternating row colors for better readability */
+}
+
+.table-dark {
+  background-color: #343a40; /* Dark background for table header */
+  color: white; /* White text for header */
+}
+
+.table-dark th {
+  background-color: #6c757d; /* A bit lighter than dark background for the header */
+}
+
+.table th, .table td {
+  text-align: center; /* Center the content */
+  padding: 15px; /* Adequate padding for spacing */
+}
+
+.table-responsive {
+  max-height: 500px; /* Optional: add max-height if you want to make the table scrollable if too long */
+  overflow-y: auto;
+}
+
+/* For smaller devices, the table should fit within the screen and be scrollable */
+@media (max-width: 768px) {
+  .table {
+    font-size: 0.9rem; /* Slightly smaller font for better readability on small screens */
+  }
+
+  .table th, .table td {
+    padding: 12px; /* Smaller padding on small devices */
+  }
+}
+
+/* General Section Styling to match existing theme */
+#services {
+  background-color: #a0a0a0 !important;
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #1f1e1e;
+  color: white;
+  padding: 20px 0;
+}
+
   
