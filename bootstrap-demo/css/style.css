@@ -1,148 +1,160 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('../assets/Bauxite-Church.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 80px;
+}
+
+.section {
+  padding: 50px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(34, 71, 85) !important;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #dcdcdc !important;
+}
+
+.navbar-toggler-icon {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar-logo {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 30px;
+}
+
+#about {
+  background-color: #7a4b3a !important;
+  color: white;
+}
+
+#missions {
+  background-color: #9a8f8f !important;
+  color: white;
+}
+
+#services {
+  background-color: #a0a0a0 !important;
+  color: white;
+}
+
+#announcements {
+  background-color: #6d6d6d !important;
+  color: white;
+}
+
+#contact {
+  background-color: #333333 !important;
+  color: white;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #1f1e1e;
+  color: white;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
   body {
-    margin: 0;
-    height: 100vh;
-    background-image: url('../assets/Bauxite-Church.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
-  .section {
-    padding: 50px;
-  }
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  .section-title {
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 30px;
-  }
-  .navbar {
-    background-color: rgb(34, 71, 85) !important;
-  }
-  .navbar-nav .nav-link {
-    color: white !important;
-  }
-  .navbar-nav .nav-link:hover {
-    color: #dcdcdc !important;
-  }
-  .navbar-toggler-icon {
-    background-color: rgb(255, 255, 255) !important;
-  }
-  .navbar-brand {
-    color: white !important;
-  }
-  #about {
-    background-color: #7a4b3a !important;
-    color: white;
-  }
-  #missions {
-    background-color: #9a8f8f !important;
-    color: white;
-  }
-  #services {
-    background-color: #a0a0a0 !important;
-    color: white;
-  }
-  #contact {
-    background-color: #333333 !important;
-    color: white;
-  }
-  body {
-    padding-top: 80px;
-  }
-  .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  footer {
-    background-color: #1f1e1e;
-    color: white;
-    padding: 20px 0;
-  }
-  @media (max-width: 768px) {
-    body {
-      background-size: cover;
-      background-position: center;
-      background-attachment: scroll;
-    }
-  }
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f8f9fa;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    padding: 10px;
-    border-radius: 4px;
-  }
-  .navbar-logo {
-    width: 30px; 
-    height: auto;
-    margin-right: 10px; 
-    vertical-align: middle; 
 }
-@media (min-width: 676px) and (max-width: 1199px)  {
-    .navbar-toggler {
-        order: -1; 
-        margin-right: 15px; 
-    }
-    .navbar-brand {
-        display: flex;
-        align-items: center;
-    }
-    .navbar-logo {
-        width: 30px; 
-        height: auto;
-        margin-right: 10px;
-    }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
-.navbar a {
-    color: white !important;
-    font-size: 0.95rem; 
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f8f9fa;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+@media (min-width: 676px) and (max-width: 1199px) {
+  .navbar-toggler {
+    order: -1;
+    margin-right: 15px;
   }
 
-  /* Table Styling */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+  }
+}
+
+.navbar a {
+  color: white !important;
+  font-size: 0.95rem;
+}
+
+/* Table Styling */
 .table-bordered {
-  border: 2px solid #ccc; 
+  border: 2px solid #ccc;
 }
+
 .table th, .table td {
-  text-align: center; 
-  padding: 15px; 
+  text-align: center;
+  padding: 15px;
 }
+
 .table-responsive {
-  max-height: 500px; 
+  max-height: 500px;
   overflow-y: auto;
 }
+
 @media (max-width: 768px) {
   .table {
     font-size: 0.9rem;
   }
 
   .table th, .table td {
-    padding: 12px; 
+    padding: 12px;
   }
-}
-#services {
-  background-color: #a0a0a0 !important;
-  color: white;
-}
-.section-title {
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 30px;
-}
-footer {
-  background-color: #1f1e1e;
-  color: white;
-  padding: 20px 0;
 }
