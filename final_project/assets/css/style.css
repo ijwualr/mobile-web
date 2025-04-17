@@ -47,7 +47,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 475px; 
+  height: 475px;
 }
 
 .section {
@@ -63,6 +63,13 @@ body {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 30px;
+}
+
+.section-heading {
+  display: inline-block;
+  border-bottom: 4px solid currentColor;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 /* Section Colors */
