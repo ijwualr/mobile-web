@@ -40,18 +40,14 @@
         <div>Loading...</div>
     </div>
     <script>
-        // Get the transition overlay element
         const transitionOverlay = document.getElementById('transition-overlay');
-        // Add event listener to each link
         document.querySelectorAll('nav.primary a').forEach(link => {
             link.addEventListener('click', function(e) {
-                e.preventDefault(); // Prevent default link action
-                // Show the loading transition
+                e.preventDefault(); 
                 transitionOverlay.classList.add('show');
-                // After a short delay (time for transition), change the page
                 setTimeout(() => {
-                    window.location.href = this.href; // Redirect to the clicked page
-                }, 500); // Match this time with transition duration (0.5s in this case)
+                    window.location.href = this.href; 
+                }, 500);
             });
         });
     </script>
