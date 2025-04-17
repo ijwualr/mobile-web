@@ -33,7 +33,6 @@ body {
   color: #dcdcdc !important;
 }
 
-/* Navbar toggler icon - white */
 .navbar-toggler {
   border-color: white;
 }
@@ -93,30 +92,33 @@ body {
 }
 
 /* Table Styling */
-.table-wrapper {
-  overflow-x: auto;
-}
-
-table {
+.custom-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: white;
-  color: black;
+  background-color: #706a6a;
+  color: white;
+  font-size: 1rem;
 }
 
-th, td {
+.custom-table th {
+  background-color: #444;
+  color: white;
   padding: 15px;
-  text-align: center;
-  border: 2px solid #ccc;
+  border: 2px solid #666;
+}
+
+.custom-table td {
+  padding: 15px;
+  border: 2px solid #666;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #3a3a3a;
 }
 
 @media (max-width: 768px) {
-  table {
+  .custom-table {
     font-size: 0.9rem;
-  }
-
-  th, td {
-    padding: 12px;
   }
 }
 
@@ -145,6 +147,26 @@ th, td {
 .card-content {
   padding: 20px;
   text-align: center;
+}
+
+/* Carousel */
+.carousel-inner img {
+  border-radius: 8px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 /* Footer */
