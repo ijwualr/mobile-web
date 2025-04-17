@@ -1,0 +1,35 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+audio, video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+section:nth-child(odd) {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
