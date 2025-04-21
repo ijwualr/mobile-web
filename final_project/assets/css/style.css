@@ -11,7 +11,7 @@ body {
 
 /* Navbar */
 .custom-navbar {
-  background-color: rgb(34, 71, 85); 
+  background-color: rgb(34, 71, 85);
 }
 
 .navbar-logo {
@@ -23,7 +23,7 @@ body {
 
 .navbar-brand {
   font-size: 1rem;
-  color: wheat !important; 
+  color: wheat !important;
 }
 
 .navbar-nav .nav-link {
@@ -110,8 +110,8 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
-  display: inline-block; 
-  margin-top: 25px; 
+  display: inline-block;
+  margin-top: 25px;
 }
 
 #about a:hover,
@@ -280,7 +280,7 @@ button:focus {
 
 /* Modal Styling - New */
 .modal-footer .btn-primary {
-  background-color: rgb(34, 71, 85); 
+  background-color: rgb(34, 71, 85);
   border-color: rgb(34, 71, 85);
   color: white;
   font-weight: bold;
@@ -295,25 +295,25 @@ button:focus {
 
 .modal-footer .btn-primary:focus {
   outline: none;
-  box-shadow: 0 0 5px rgba(34, 71, 85, 0.7); 
+  box-shadow: 0 0 5px rgba(34, 71, 85, 0.7);
 }
 
 .modal-content {
-  background-color: rgb(34, 71, 85);  
+  background-color: rgb(34, 71, 85);
   color: white;
   border-radius: 10px;
-  border: 3px solid white; 
+  border: 3px solid white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .modal-header {
-  border-bottom: 2px solid wheat; 
+  border-bottom: 2px solid wheat;
 }
 
 .modal-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(251, 251, 251); 
+  color: rgb(251, 251, 251);
 }
 
 .modal-header .btn-close {
@@ -329,7 +329,7 @@ button:focus {
   font-size: 1rem;
   line-height: 1.6;
   padding: 20px;
-  background-color: #444; 
+  background-color: #444;
   color: white;
   border-radius: 10px;
 }
@@ -348,9 +348,9 @@ button:focus {
   border-radius: 10px;
 }
 
-/* Links inside Modal */
+/* Modal Links */
 .modal-body a {
-  color: wheat; 
+  color: wheat;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -380,5 +380,61 @@ button:focus {
 
   .modal-footer .btn-primary {
     font-size: 0.9rem;
+  }
+}
+
+/* Related Links as Buttons in Contact Section */
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+#contact li {
+  display: inline-block;
+}
+
+#contact a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  background-color: rgb(34, 71, 85);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 120px;
+}
+
+#contact a:hover,
+#contact a:focus {
+  background-color: #dcdcdc;
+  color: #222;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+#contact a:active {
+  background-color: #ff8c00;
+  color: white;
+}
+
+/* Mobile View: Stretch the Related Links */
+@media (max-width: 768px) {
+  #contact ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #contact a {
+    width: 100%; 
+    font-size: .75rem; 
+    padding: 12px 0; 
   }
 }
