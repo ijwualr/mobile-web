@@ -2,50 +2,50 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   margin: 0;
   font-family: sans-serif;
   padding-top: 50px;
 }
-
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 /* Navbar */
 .custom-navbar {
   background-color: rgb(34, 71, 85);
 }
-
 .navbar-logo {
   width: 30px;
   height: auto;
   margin-right: 10px;
   vertical-align: middle;
 }
-
 .navbar-brand {
   font-size: 1rem;
   color: wheat !important;
 }
-
 .navbar-nav .nav-link {
   font-size: 0.9rem;
   color: white !important;
 }
-
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
   color: #dcdcdc !important;
   outline: none;
   text-decoration: underline;
 }
-
 .navbar-toggler {
   border-color: white;
 }
-
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
 /* Background Section */
 .background-section {
   background-image: url('../css/img/Bauxite-Church.jpg');
@@ -54,56 +54,46 @@ body {
   background-attachment: fixed;
   height: 475px;
 }
-
 /* Section Styling */
 .section {
   padding: 60px 20px;
 }
-
 .container {
   max-width: 1100px;
   margin: 0 auto;
 }
-
 .section-title {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 30px;
 }
-
 .section-heading {
   display: inline-block;
   border-bottom: 4px solid currentColor;
   padding-bottom: 10px;
   text-align: center;
 }
-
 /* Section Background Colors */
 #about {
   background-color: #7a4b3a;
   color: white;
 }
-
 #missions {
   background-color: #9a8f8f;
   color: white;
 }
-
 #services {
   background-color: #a0a0a0;
   color: white;
 }
-
 #announcements {
   background-color: #6d6d6d;
   color: white;
 }
-
 #contact {
   background-color: #333;
   color: white;
 }
-
 /* About Section Link Styling */
 #about a {
   color: wheat;
@@ -113,7 +103,6 @@ body {
   display: inline-block;
   margin-top: 25px;
 }
-
 #about a:hover,
 #about a:focus {
   color: #dcdcdc;
@@ -121,11 +110,9 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 2px 5px;
 }
-
 #about a:active {
   color: #ff8c00;
 }
-
 /* Table Styling */
 .custom-table {
   width: 100%;
@@ -134,29 +121,24 @@ body {
   color: white;
   font-size: 1rem;
 }
-
 .custom-table th {
   background-color: rgb(34, 71, 85);
   color: white;
   padding: 15px;
   border: 2px solid rgb(255, 255, 255);
 }
-
 .custom-table td {
   padding: 15px;
   border: 2px solid wheat;
 }
-
 .custom-table tr:nth-child(even) {
   background-color: #3a3a3a;
 }
-
 @media (max-width: 768px) {
   .custom-table {
     font-size: 0.70rem;
   }
 }
-
 /* Card Grid */
 .card-grid {
   display: grid;
@@ -164,7 +146,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin-top: 30px;
 }
-
 .card {
   background: #6d6d6d; 
   color: white;
@@ -184,46 +165,39 @@ body {
   display: inline-block;
   transition: all 0.3s ease;
 }
-
 .btn:hover,
 .card .btn-more-info:focus {
   background-color: #dcdcdc;
   color: #222;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
 /* Card Image */
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-
 /* Card Content */
 .card-content {
   padding: 20px;
   text-align: center;
 }
-
 /* Card Title */
 .card-content h5 {
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 /* Card Description */
 .card-content p {
   color: #dcdcdc;
   line-height: 1.5;
   font-size: 1rem;
 }
-
 /* Hover Effect on Card */
 .card:hover {
   transform: translateY(-10px); 
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); 
 }
-
 /* Modal Styling - Consistent with the Card Theme */
 .modal-footer .btn-primary {
   background-color: rgb(34, 71, 85); /* Matching the card's background */
@@ -232,18 +206,15 @@ body {
   font-weight: bold;
   transition: all 0.3s ease;
 }
-
 .modal-footer .btn-primary:hover {
   background-color: #dcdcdc;
   color: #222;
   border-color: #dcdcdc;
 }
-
 .modal-footer .btn-primary:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(34, 71, 85, 0.7);
 }
-
 .modal-content {
   background-color: rgb(34, 71, 85);
   color: white;
@@ -251,26 +222,21 @@ body {
   border: 3px solid white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-
 .modal-header {
   border-bottom: 2px solid wheat;
 }
-
 .modal-title {
   font-size: 1.5rem;
   font-weight: bold;
   color: rgb(251, 251, 251);
 }
-
 .modal-header .btn-close {
   color: white;
   opacity: 1;
 }
-
 .modal-header .btn-close:hover {
   color: #dcdcdc;
 }
-
 .modal-body {
   font-size: 1rem;
   line-height: 1.6;
@@ -279,21 +245,17 @@ body {
   color: white;
   border-radius: 10px;
 }
-
 .modal-dialog {
   max-width: 600px;
   margin: 50px auto;
 }
-
 .modal-body::-webkit-scrollbar {
   width: 8px;
 }
-
 .modal-body::-webkit-scrollbar-thumb {
   background-color: #444;
   border-radius: 10px;
 }
-
 /* Modal Links */
 .modal-body a {
   color: wheat;
@@ -301,7 +263,6 @@ body {
   font-weight: bold;
   transition: all 0.3s ease;
 }
-
 .modal-body a:hover,
 .modal-body a:focus {
   color: #dcdcdc;
@@ -309,26 +270,21 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 2px 5px;
 }
-
 .modal-body a:active {
   color: #ff8c00;
 }
-
 /* Mobile Adjustments for Modals */
 @media (max-width: 768px) {
   .modal-content {
     padding: 15px;
   }
-
   .modal-title {
     font-size: 1.2rem;
   }
-
   .modal-footer .btn-primary {
     font-size: 0.9rem;
   }
 }
-
 /* Footer */
 footer {
   background-color: #1f1e1e;
@@ -336,7 +292,6 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
-
 /* Missions Section Grid */
 #missions .mission-list {
   display: grid;
@@ -344,7 +299,6 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 30px;
 }
-
 #missions .mission-item {
   background-color: #f4f4f4;
   color: #333 !important;
@@ -353,46 +307,38 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 #missions .mission-item:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-
 #missions .mission-item h3 {
   font-size: 1.8rem;
   color: #222;
   margin-bottom: 10px;
 }
-
 #missions .mission-item p {
   font-size: 1rem;
   color: #333;
   line-height: 1.6;
 }
-
 /* Accessibility */
 a:focus,
 button:focus {
   outline: 2px solid #fff;
   outline-offset: 2px;
 }
-
 /* Responsive Section Padding */
 @media (max-width: 768px) {
   .section {
     padding: 40px 15px;
   }
-
   #missions .mission-item h3 {
     font-size: 1.5rem;
   }
-
   #missions .mission-item p {
     font-size: 0.9rem;
   }
 }
-
 #missions .mission-item {
   background-color: #f4f4f4;
   color: #333 !important;
@@ -402,7 +348,6 @@ button:focus {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border:3px solid rgb(34, 71, 85); 
 }
-
 /* Related Links as Buttons in Contact Section */
 #contact ul {
   list-style: none;
@@ -413,11 +358,9 @@ button:focus {
   justify-content: center;
   gap: 15px;
 }
-
 #contact li {
   display: inline-block;
 }
-
 #contact a {
   display: inline-block;
   color: white;
@@ -430,7 +373,6 @@ button:focus {
   text-align: center;
   min-width: 120px;
 }
-
 /* Hover & Active Styles */
 #contact a:hover,
 #contact a:focus {
@@ -439,24 +381,20 @@ button:focus {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
-
 #contact a:active {
   background-color: #ff8c00;
   color: white;
 }
-
 /* Mobile View: Stack Links Vertically */
 @media (max-width: 768px) {
   #contact ul {
     flex-direction: column;
     align-items: center;
   }
-
   #contact li {
     width: 100%;
     max-width: 300px;
   }
-
   #contact a {
     width: 100%;
     font-size: 0.85rem;
