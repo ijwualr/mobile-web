@@ -136,15 +136,15 @@ body {
 }
 
 .custom-table th {
-  background-color: #444;
+  background-color: rgb(34, 71, 85);
   color: white;
   padding: 15px;
-  border: 2px solid #666;
+  border: 2px solid wheat;
 }
 
 .custom-table td {
   padding: 15px;
-  border: 2px solid #666;
+  border: 2px solid wheat;
 }
 
 .custom-table tr:nth-child(even) {
@@ -153,7 +153,7 @@ body {
 
 @media (max-width: 768px) {
   .custom-table {
-    font-size: 0.80rem;
+    font-size: 0.70rem;
   }
 }
 
