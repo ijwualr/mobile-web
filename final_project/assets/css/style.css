@@ -166,131 +166,67 @@ body {
 }
 
 .card {
-  background: white;
-  color: #222;
-  border-radius: 5px;
+  background: #6d6d6d; 
+  color: white;
+  border-radius: 10px; 
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn {
+  background-color: rgb(34, 71, 85); 
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
+.btn:hover,
+.card .btn-more-info:focus {
+  background-color: #dcdcdc;
+  color: #222;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
+/* Card Content */
 .card-content {
   padding: 20px;
   text-align: center;
 }
 
+/* Card Title */
 .card-content h5 {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
+/* Card Description */
 .card-content p {
-  color: #444;
+  color: #dcdcdc;
   line-height: 1.5;
-}
-
-/* Carousel */
-.carousel-inner img {
-  border-radius: 8px;
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  padding: 10px;
-}
-
-.carousel {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-
-/* Footer */
-footer {
-  background-color: #1f1e1e;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-/* Missions Section Grid */
-#missions .mission-list {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-top: 30px;
-}
-
-#missions .mission-item {
-  background-color: #f4f4f4;
-  color: #333 !important;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#missions .mission-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-#missions .mission-item h3 {
-  font-size: 1.8rem;
-  color: #222;
-  margin-bottom: 10px;
-}
-
-#missions .mission-item p {
   font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
 }
 
-/* Accessibility */
-a:focus,
-button:focus {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
+/* Hover Effect on Card */
+.card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); 
 }
 
-/* Responsive Section Padding */
-@media (max-width: 768px) {
-  .section {
-    padding: 40px 15px;
-  }
-
-  #missions .mission-item h3 {
-    font-size: 1.5rem;
-  }
-
-  #missions .mission-item p {
-    font-size: 0.9rem;
-  }
-}
-#missions .mission-item {
-  background-color: #f4f4f4;
-  color: #333 !important;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border:3px solid rgb(34, 71, 85); 
-}
-
-
-/* Modal Styling - New */
+/* Modal Styling - Consistent with the Card Theme */
 .modal-footer .btn-primary {
-  background-color: rgb(34, 71, 85);
+  background-color: rgb(34, 71, 85); /* Matching the card's background */
   border-color: rgb(34, 71, 85);
   color: white;
   font-weight: bold;
@@ -391,6 +327,80 @@ button:focus {
   .modal-footer .btn-primary {
     font-size: 0.9rem;
   }
+}
+
+/* Footer */
+footer {
+  background-color: #1f1e1e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Missions Section Grid */
+#missions .mission-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 30px;
+}
+
+#missions .mission-item {
+  background-color: #f4f4f4;
+  color: #333 !important;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#missions .mission-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#missions .mission-item h3 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+#missions .mission-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Responsive Section Padding */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 15px;
+  }
+
+  #missions .mission-item h3 {
+    font-size: 1.5rem;
+  }
+
+  #missions .mission-item p {
+    font-size: 0.9rem;
+  }
+}
+
+#missions .mission-item {
+  background-color: #f4f4f4;
+  color: #333 !important;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border:3px solid rgb(34, 71, 85); 
 }
 
 /* Related Links as Buttons in Contact Section */
