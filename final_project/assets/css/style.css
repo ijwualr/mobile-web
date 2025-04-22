@@ -139,7 +139,7 @@ body {
   background-color: rgb(34, 71, 85);
   color: white;
   padding: 15px;
-  border: 2px solid wheat;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .custom-table td {
