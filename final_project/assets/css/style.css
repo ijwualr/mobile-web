@@ -277,6 +277,16 @@ button:focus {
     font-size: 0.9rem;
   }
 }
+#missions .mission-item {
+  background-color: #f4f4f4;
+  color: #333 !important;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border:3px solid rgb(34, 71, 85); 
+}
+
 
 /* Modal Styling - New */
 .modal-footer .btn-primary {
@@ -411,6 +421,7 @@ button:focus {
   min-width: 120px;
 }
 
+/* Hover & Active Styles */
 #contact a:hover,
 #contact a:focus {
   background-color: #dcdcdc;
@@ -424,17 +435,21 @@ button:focus {
   color: white;
 }
 
-/* Mobile View: Stretch the Related Links */
+/* Mobile View: Stack Links Vertically */
 @media (max-width: 768px) {
   #contact ul {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+  }
+
+  #contact li {
+    width: 100%;
+    max-width: 300px;
   }
 
   #contact a {
-    width: 100%; 
-    font-size: .75rem; 
-    padding: 12px 0; 
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 14px 0;
   }
 }
