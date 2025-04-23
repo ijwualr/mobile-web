@@ -504,3 +504,10 @@ button:focus {
   outline: 2px solid #fff;
   outline-offset: 2px;
 }
+@media (max-width: 768px) {
+  /* ...existing styles... */
+  
+  #announcements .section-title.section-heading {
+    font-size: 2rem;
+  }
+}
