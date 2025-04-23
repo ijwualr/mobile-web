@@ -348,6 +348,22 @@ footer {
   line-height: 1.6;
 }
 
+#announcementCarousel {
+  border: 4px solid rgb(34, 71, 85);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6); 
+  margin-top: 30px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#announcementCarousel:hover {
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7); 
+  transform: translateY(-5px);
+}
+
+
+
 /* --------------------- */
 /* Contact Section Links */
 /* --------------------- */
