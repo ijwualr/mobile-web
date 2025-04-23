@@ -385,6 +385,20 @@ footer {
   width: 7%;
 }
 
+@media (max-width: 768px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 14px;
+    background-size: 50% 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 12%; /* more tap space */
+  }
+}
+
 /* --------------------- */
 /* Contact Section Links */
 /* --------------------- */
