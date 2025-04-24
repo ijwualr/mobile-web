@@ -528,15 +528,14 @@ button:focus {
 @media (max-width: 1000px) {
   .card-grid {
     display: flex;
-    justify-content: center; /* Center the cards horizontally */
-    gap: 20px; /* Space between cards */
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
   }
-
   .card {
-    flex: 1 1 100%; /* Make each card take full width on smaller screens */
-    max-width: 300px; /* Restrict the max-width of each card */
-    margin-bottom: 20px; /* Add space below each card */
+    flex: 1 1 100%; 
+    max-width: 350px; 
+    margin-bottom: 20px; 
   }
 }
 
