@@ -348,21 +348,22 @@ footer {
   color: #333;
   line-height: 1.6;
 }
-
 /* ----------------------- */
-/* Announcement Carousel    */
+/* Announcement Carousel   */
 /* ----------------------- */
 #announcementCarousel {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 900px;
-  height: 80%;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
   border: 4px solid rgb(34, 71, 85);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
-  margin: 0 auto;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -371,6 +372,13 @@ footer {
   transform: translateY(-5px);
 }
 
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Carousel Controls */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(34, 71, 85, 0.9);
@@ -382,36 +390,43 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
   background-color: wheat;
   transform: scale(1.1);
 }
-
 .carousel-control-prev,
 .carousel-control-next {
-  width: 7%;
+  width: 8%;
 }
 
+/* -------------------------- */
+/* Responsive - Tablet/Mobile */
+/* -------------------------- */
 @media (max-width: 768px) {
   #announcementCarousel {
     width: 100%;
-    height: 60%;
-    margin: 20px auto;
+    height: 100%;
+    margin: 0; /* Remove margin to eliminate the gap */
     border: 3px solid rgb(34, 71, 85);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 12%;
   }
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     padding: 14px;
     background-size: 50% 50%;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   }
 
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 12%;
+  .carousel-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -505,7 +520,6 @@ button:focus {
   outline-offset: 2px;
 }
 @media (max-width: 768px) {
-  /* ...existing styles... */
   
   #announcements .section-title.section-heading {
     font-size: 2rem;
