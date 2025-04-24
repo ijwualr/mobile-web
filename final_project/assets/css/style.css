@@ -135,7 +135,7 @@ body {
   border-collapse: collapse;
   background-color: #706a6a;
   color: white;
-  font-size: 1rem;
+  font-size: .85rem;
 }
 .custom-table th {
   background-color: rgb(34, 71, 85);
@@ -152,7 +152,7 @@ body {
 }
 @media (max-width: 768px) {
   .custom-table {
-    font-size: 0.70rem;
+    font-size: 0.65rem;
   }
 }
 
